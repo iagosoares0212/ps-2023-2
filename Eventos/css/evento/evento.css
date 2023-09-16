@@ -22,6 +22,31 @@ footer {
     background: #606060;
 }
 
+#evento-historicos {
+    min-height: calc(100vh - 120px);
+    height: 100%;
+    width: 100%;
+    background: #f2f2f2;
+}
+
+#toda-pagina {
+    display: flex;
+    min-height: calc(100vh - 120px);
+    height: 100%;
+}
+
+#nav-index {
+    min-height: 100%;
+    width: 107px;
+    background: #606060;
+}
+
+#evento-historicos-container {
+    height: calc(100% - 120px);
+    width: calc(100% - 107px);
+    background: #f2f2f2;   
+}
+
 .info-container {
     margin: 0 23px;
     margin-top: 30px;
@@ -114,44 +139,7 @@ footer {
     display: none;
 }
 
-#evento-historicos {
-    height: calc(100vh - 120px);
-    width: calc(100vw );
-}
-
-#toda-pagina {
-    display: flex;
-}
-
-#evento-historicos-container {
-    height: calc(100vh - 120px);
-    width: calc(100vw - 107px);
-    background: #f2f2f2;
-    
-}
-
-
-#nav-index {
-    width: 107px;
-    height: calc(100vh - 120px);
-    background: #606060;
-}
-
-nav {
-    display: flex;
-    flex-direction: column;
-    text-decoration:none;
-    margin: 20px;
-    font-size: 50px;
-    
-}
-
-.tabela-hitoricos {
-    background: #f2f2f2;
-}
-
 .tabela{
-
     overflow: auto;
     display: flex;
     flex-direction: column;
@@ -205,4 +193,16 @@ td {
 .check-td img {
     margin: 0 5px;
 
+}
+
+@media only screen and (max-width: 714px)  {
+    .info-container2 {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    
+    .info-container2 button{
+        margin-top: 20px;
+    }
 }
