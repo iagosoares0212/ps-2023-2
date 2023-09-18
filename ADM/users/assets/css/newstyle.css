@@ -1,0 +1,63 @@
+@import url("formulario.css");
+@import url("rodape.css");
+@import url("dashboard.css");
+@import url("style.css");
+
+.layout{
+    display: grid;
+    grid-template-areas: 
+    "aside header"
+    "aside main";
+    grid-template-columns: auto 1fr;
+    background-color: #606060;
+}
+.cabecalho{
+    grid-area: "header";
+    background-color: #606060;
+}
+
+.container-fluid{
+    background-color: #606060;
+}
+
+
+.menu-lateral{
+    grid-area: aside;
+    background-color: #606060;
+    color: #F2F2F2;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 400;
+}
+.principal{
+    grid-area: main;
+}
+
+:root{
+    --laranja: #FBC600;;
+    --fonte-principal:"Montserrat";
+    --azul-escuro: #0D132B ;
+    --cinza-claro: #606060;
+    --cor-de-fundo: #F2F2F2;
+    --cinza-claro-rodape:#A6A6A6;
+    --cinza-escuro-rodape: #595959;
+    --laranja-escuro: #ffa500;
+}
+
+body{
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-de-fundo);
+    color: var(--azul-escuro);
+}
+.barra-nav{
+    background-color: #606060;;
+}
+
+.botao{
+    background-color: var(--laranja);
+    font-weight: 500;
+    font-size: 14px;
+}
+.botao:hover{
+    background-color: var(--laranja-escuro);
+}
