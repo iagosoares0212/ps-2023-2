@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/users/assets/css/users.css">
-    <title>Usuários (ADM)</title>
+    <link rel="stylesheet" href="/funnel/assets/css/funnel.css">
+    <title>Funil (ADM)</title>
 </head>
 <body>
     
@@ -20,7 +20,7 @@
     </header>
 
     <!-- página -->
-    <section id="'users">
+    <section id="funnel">
         <div id="full-page">
 
             <!-- barra lateral -->
@@ -45,33 +45,41 @@
                 </nav>
             </div>
 
-            <!-- container da pagina -->
-            <div id="users-container">
+            <!-- container da página -->
+            <div id="funnel-container">
 
                 <!-- título e informações da página -->
-                <div class="user-itens">
+                <div class="funnel-itens">
 
                     <div class="title-container">
-                        <strong class="user-title">Usuários</strong>
+                        <strong class="funnel-title">Funil</strong>
                     </div>
                     
                     <!-- caixa de pesquisa -->
                     <div class="search-container">
-                        <div class="search-input-container">
-                            <input class="search-input" placeholder="Pesquisar"  type="text">
-                            <a href="#"><img class="search-icon" src="assets/img/navbar-icons/search icon.svg" alt=""></a>
+                        <div class="sub-search-container">
+                            <div class="search-input-container">
+                                <input class="search-input" placeholder="Pesquisar"  type="text">
+                                <a href="#"><img class="search-icon" src="assets/img/navbar-icons/search icon.svg" alt=""></a>
+    
+                            </div>
+                            <div class="filter-container">
+                                <a id="filter-icon" href="#"> <img src="assets/img/navbar-icons/search filters icon.svg" alt="Ícone de filtros"></a>
+                                <a href="">Filtros</a>
+                            </div>
                         </div>
+                        
 
-                        <!-- botão para adicionar novos usuários -->
-                        <button type="button"><span><img src="assets/img/navbar-icons/plus icon.svg" alt=""></span> Adicionar</button>
+                        <!-- botão para cadastro de novos eventos -->
+                        <button>Cadastrar evento</button>
                     </div>
 
                     <!-- resultados da pesquisa -->
                     <div class="results-container">Mostrando 10 de 51 resultados</div>
                 </div>
 
-                <!-- tabela de usuários -->
-                <div class="users-table">
+                <!-- tabela do funil -->
+                <div class="funnel-table">
                     <div class="table">
                         <table>
 
@@ -79,8 +87,10 @@
                             <thead>
                                 <tr>
                                     <th>Nome</th>
-                                    <th>Cargo</th>
-                                    <th>Email</th>
+                                    <th>Etapa</th>
+                                    <th>Entidade</th>
+                                    <th>Público</th>
+                                    <th>Data do evento</th>
                                     <th></th>
                                 </tr>
                             </thead>
@@ -91,114 +101,145 @@
                                 <!-- elementos da tabela -->
                                 <tr>
                                     <td>
-                                        <div class="user-info">
-                                            <a href="#"><img src="assets/img/table-icons/user identification icon.svg" alt=""></a>
-                                            <span>Luan Costa</span>
+                                        <div class="funnel-id">
+                                            <a href="#">Nome do evento</a>
                                         </div>
                                     </td>
-                                    <td>Gerente executivo</td>
-                                    <td>medicosdorn@gmail.com</td>
+                                    <td class="in-training"><button>Em Captação</button></td>
+                                    <td>
+                                        <a class="table-entity" href="">Associação de Médicos do RN</a>
+                                    </td>
+                                    <td>5000</td>
+                                    <td>05/11/2020</td>
                                     <td class="delete-icon-directory"><a href="#"><img src="assets/img/table-icons/delete icon.svg" alt="Exluir"></a></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <div class="user-info">
-                                            <a href="#"><img src="assets/img/table-icons/user identification icon.svg" alt=""></a>
-                                            <span>Luan Costa</span>
+                                        <div class="funnel-id">
+                                            <a href="#">Nome do evento</a>
                                         </div>
                                     </td>
-                                    <td>Gerente executivo</td>
-                                    <td>medicosdorn@gmail.com</td>
+                                    <td class="lost"><button>Perdido</button></td>
+                                    <td>
+                                        <a class="table-entity" href="">Associação de Médicos do RN</a>
+                                    </td>
+                                    <td>5000</td>
+                                    <td>05/11/2020</td>
                                     <td class="delete-icon-directory"><a href="#"><img src="assets/img/table-icons/delete icon.svg" alt="Exluir"></a></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <div class="user-info">
-                                            <a href="#"><img src="assets/img/table-icons/user identification icon.svg" alt=""></a>
-                                            <span>Luan Costa</span>
+                                        <div class="funnel-id">
+                                            <a href="#">Nome do evento</a>
                                         </div>
                                     </td>
-                                    <td>Gerente executivo</td>
-                                    <td>medicosdorn@gmail.com</td>
+                                    <td class="captured"><button>Captado</button></td>
+                                    <td>
+                                        <a class="table-entity" href="">Associação de Médicos do RN</a>
+                                    </td>
+                                    <td>5000</td>
+                                    <td>05/11/2020</td>
                                     <td class="delete-icon-directory"><a href="#"><img src="assets/img/table-icons/delete icon.svg" alt="Exluir"></a></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <div class="user-info">
-                                            <a href="#"><img src="assets/img/table-icons/user identification icon.svg" alt=""></a>
-                                            <span>Luan Costa</span>
+                                        <div class="funnel-id">
+                                            <a href="#">Nome do evento</a>
                                         </div>
                                     </td>
-                                    <td>Gerente executivo</td>
-                                    <td>medicosdorn@gmail.com</td>
+                                    <td class="in-prospecting"><button>Em Prospecção</button></td>
+                                    <td>
+                                        <a class="table-entity" href="">Associação de Médicos do RN</a>
+                                    </td>
+                                    <td>5000</td>
+                                    <td>05/11/2020</td>
                                     <td class="delete-icon-directory"><a href="#"><img src="assets/img/table-icons/delete icon.svg" alt="Exluir"></a></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <div class="user-info">
-                                            <a href="#"><img src="assets/img/table-icons/user identification icon.svg" alt=""></a>
-                                            <span>Luan Costa</span>
+                                        <div class="funnel-id">
+                                            <a href="#">Nome do evento</a>
                                         </div>
                                     </td>
-                                    <td>Gerente executivo</td>
-                                    <td>medicosdorn@gmail.com</td>
+                                    <td class="captured"><button>Captado</button></td>
+                                    <td>
+                                        <a class="table-entity" href="">Associação de Médicos do RN</a>
+                                    </td>
+                                    <td>5000</td>
+                                    <td>05/11/2020</td>
                                     <td class="delete-icon-directory"><a href="#"><img src="assets/img/table-icons/delete icon.svg" alt="Exluir"></a></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <div class="user-info">
-                                            <a href="#"><img src="assets/img/table-icons/user identification icon.svg" alt=""></a>
-                                            <span>Luan Costa</span>
+                                        <div class="funnel-id">
+                                            <a href="#">Nome do evento</a>
                                         </div>
                                     </td>
-                                    <td>Gerente executivo</td>
-                                    <td>medicosdorn@gmail.com</td>
+                                    <td class="in-research"><button>Em pesquisa</button></td>
+                                    <td>
+                                        <a class="table-entity" href="">Associação de Médicos do RN</a>
+                                    </td>
+                                    <td>5000</td>
+                                    <td>05/11/2020</td>
                                     <td class="delete-icon-directory"><a href="#"><img src="assets/img/table-icons/delete icon.svg" alt="Exluir"></a></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <div class="user-info">
-                                            <a href="#"><img src="assets/img/table-icons/user identification icon.svg" alt=""></a>
-                                            <span>Luan Costa</span>
+                                        <div class="funnel-id">
+                                            <a href="#">Nome do evento</a>
                                         </div>
                                     </td>
-                                    <td>Gerente executivo</td>
-                                    <td>medicosdorn@gmail.com</td>
+                                    <td class="supported"><button>Apoiado</button></td>
+                                    <td>
+                                        <a class="table-entity" href="">Associação de Médicos do RN</a>
+                                    </td>
+                                    <td>5000</td>
+                                    <td>05/11/2020</td>
                                     <td class="delete-icon-directory"><a href="#"><img src="assets/img/table-icons/delete icon.svg" alt="Exluir"></a></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <div class="user-info">
-                                            <a href="#"><img src="assets/img/table-icons/user identification icon.svg" alt=""></a>
-                                            <span>Luan Costa</span>
+                                        <div class="funnel-id">
+                                            <a href="#">Nome do evento</a>
                                         </div>
                                     </td>
-                                    <td>Gerente executivo</td>
-                                    <td>medicosdorn@gmail.com</td>
+                                    <td class="captured"><button>Captado</button></td>
+                                    <td>
+                                        <a class="table-entity" href="">Associação de Médicos do RN</a>
+                                    </td>
+                                    <td>5000</td>
+                                    <td>05/11/2020</td>
                                     <td class="delete-icon-directory"><a href="#"><img src="assets/img/table-icons/delete icon.svg" alt="Exluir"></a></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <div class="user-info">
-                                            <a href="#"><img src="assets/img/table-icons/user identification icon.svg" alt=""></a>
-                                            <span>Luan Costa</span>
+                                        <div class="funnel-id">
+                                            <a href="#">Nome do evento</a>
                                         </div>
                                     </td>
-                                    <td>Gerente executivo</td>
-                                    <td>medicosdorn@gmail.com</td>
+                                    <td class="lost"><button>Perdido</button></td>
+                                    <td>
+                                        <a class="table-entity" href="">Associação de Médicos do RN</a>
+                                    </td>
+                                    <td>5000</td>
+                                    <td>05/11/2020</td>
                                     <td class="delete-icon-directory"><a href="#"><img src="assets/img/table-icons/delete icon.svg" alt="Exluir"></a></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <div class="user-info">
-                                            <a href="#"><img src="assets/img/table-icons/user identification icon.svg" alt=""></a>
-                                            <span><a href="#">Luan Costa</a></span>
+                                        <div class="funnel-id">
+                                            <a href="#">Nome do evento</a>
                                         </div>
                                     </td>
-                                    <td>Gerente executivo</td>
-                                    <td>medicosdorn@gmail.com</td>
+                                    <td class="in-prospecting"><button>Em Prospecção</button></td>
+                                    <td>
+                                        <a class="table-entity" href="">Associação de Médicos do RN</a>
+                                    </td>
+                                    <td>5000</td>
+                                    <td>05/11/2020</td>
                                     <td class="delete-icon-directory"><a href="#"><img src="assets/img/table-icons/delete icon.svg" alt="Exluir"></a></td>
                                 </tr>
+                                
                             </tbody>
 
                             <!-- rodape da tabela -->
@@ -206,7 +247,7 @@
 
                                 <!-- sistema de páginas -->
                                 <tr>
-                                    <th colspan="5" id="advance-page">
+                                    <th colspan="6" id="advance-page">
                                         <a href="#"><img src="assets/img/table-icons/previous page icon.svg" alt=""><img src="assets/img/table-icons/previous page icon.svg" alt=""></a>
                                         <a href="#"><img src="assets/img/table-icons/previous page icon.svg" alt=""></a>
                                         <a class="sub-button" href="#">2</a>

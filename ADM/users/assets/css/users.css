@@ -108,6 +108,16 @@ footer {
     cursor: pointer;
 }
 
+.add-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-text {
+    padding-left: 10px;
+}
+
 .search-container button:hover {
     background-color: #daaa00fd ;
 }
