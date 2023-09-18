@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background: #606060;
+}
+
+
+footer {
+    width: 100%;
+    height: 60px;
+    background: #606060;
+}
+
+.info-container {
+    margin: 0 23px;
+    margin-top: 30px;
+}
+
+.nav-funil {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration:none;
+    color: #0D132B;
+}
+
+.info-container2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 23px;
+}
+
+.info-container2 button{
+    width: 146px;
+    height: 47px;
+    flex-shrink: 0;
+
+    color: #0D132B;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    border-radius: 3px;
+    background: #FBC600;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.info-container2 button span{
+    font-size: 20px;
+}
+
+.input-pesquisa-con {
+    width: 416px;
+    position: relative;
+}
+
+
+.label-pesquisa {
+    display: flex;
+    width: 416px;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 15px;
+    padding: 0px 15px;
+}
+
+.input-pesquisa {
+    width: 416px;
+    height: 48px;
+}
+
+.lupa {
+    width: 21.894px;
+    height: 20.86px;
+    text-align: right;
+}
+
+.info-container3 {
+    margin: 0 23px;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.pagina {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 1px;
+}
+
+#pop-adiciona {
+    display: none;
+}
+
+#pop-edita {
+    display: none;
+}
+
+#evento-historicos {
+    height: calc(100vh - 120px);
+    width: calc(100vw );
+}
+
+#toda-pagina {
+    display: flex;
+}
+
+#evento-historicos-container {
+    height: calc(100vh - 120px);
+    width: calc(100vw - 107px);
+    background: #f2f2f2;
+    
+}
+
+
+#nav-index {
+    width: 107px;
+    height: calc(100vh - 120px);
+    background: #606060;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    text-decoration:none;
+    margin: 20px;
+    font-size: 50px;
+    
+}
+
+.tabela-hitoricos {
+    background: #f2f2f2;
+}
+
+.tabela{
+
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    background: #f2f2f2;
+    
+}
+
+table {
+    text-align: left;
+    border-collapse: collapse;
+}
+
+th {
+    width: 1273px;
+    background: #606060;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #F2F2F2;
+    text-align: left;
+    padding: 17px 17px;
+}
+
+tr {
+    border: 1px solid #DADADA;
+    background: #F8F8F8;
+
+}
+
+td {
+    padding: 15px
+}
+
+#avança-foot {
+    text-align: center;
+}
+
+#avança-foot a{
+    margin: 10px;
+    text-decoration:none;
+    color: #F2F2F2;
+}
+
+.check-td {
+    text-align: right;
+    margin: 0 20px;
+}
+
+.check-td img {
+    margin: 0 5px;
+
+}
