@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Eventos/css/evento/atividades.css">
-    <title>Evento</title>
+    <title>Evento histórico</title>
 </head>
 <body>
     <!-- cabeçario -->
@@ -22,46 +22,155 @@
             <div class="conteudo">
                 <!-- container da pagina -->
                 <div id="evento-historicos-container">
-
+            
                     <!-- pagina modal edição de atividade -->
-                    <div id="pop-edição">
-                        <div class="pop">
-                            <h1>Próximas atividades</h1>
-                            <div class="adicionar-atividade">
-                                <label for="nome-atividade">Nome</label>
-                                <input id="nome-atividade" type="text">
-                                <p>EX: Ligar para a entidade responsável</p>
-
-                                <label for="responsavel">Responsável</label>
-                                <input id="responsavel" type="text">
-                                <p>Luana</p>
-
-                                <label for="data">Data</label>
-                                <input id="data" type="text">
-                                <p>Dia</p>
-
-                                <label for="hora">Hora</label>
-                                <input id="hora" type="text">
-                                <p>Hora</p>
-
-                                <label for="tipo-atividade"></label>
-                                <input id="tipo-atividade" type="text">
-                                <p>Selecione</p>
-
-                                <label for="Estado-atividade"></label>
-                                <input id="estado-atividade" type="text">
-                                <p>Selecione</p>
-
-                                <label for="observação"></label>
-                                <input id="observação" type="text">
-                                <p>Ex: No foi possível contatar a atividade</p>
+                    <div class="hider" id="pop-edita" ></div>
+                    <div class="hider" id="modal">
+                        <div class="hider" id="modal-proxima">
+                            <div class="modal-header">
+                                <h2>Próximas atividades</h2>
+                                <button>x</button>
                             </div>
-                            <button>Salvar</button>
+                            <div class="modal-body">
+                                <div class="modal-container">
+                                    <div class="modal-itens">
+                                        <label for="nome-atividade">Nome</label>
+                                        <div class="input-relative">
+                                            <input placeholder="Ex: Ligar para a entidade responsável" id="nome-atividade" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="modal-itens">
+                                        <label for="responsavel">Responsável</label>
+                                        <div class="input-relative">
+                                            <input placeholder="Luana" id="responsavel" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-container">
+                                    <div class="modal-itens">
+                                        <label for="data">Data</label>
+                                        <div class="input-relative">
+                                            <input placeholder="Dia" id="data" type="text">
+                                            <div class="input-absolute">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-itens">
+                                        <label for="hora">Hora</label>
+                                        <div class="input-relative">
+                                            <input placeholder="Hora" id="hora" type="text">
+                                            <div class="input-absolute">
+                                                <a href="#"><img src="/Eventos/ico/action/alarm_24px.svg" alt="Relogio"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-container">
+                                    <div class="modal-itens">
+                                        <label for="tipo-atividade">Tipo de atividade</label>
+                                        <div class="input-relative">
+                                            <input placeholder="Selecione" id="tipo-atividade" type="text">
+                                            <div class="input-absolute" > 
+                                                <a href="#"><img src="/Eventos/ico/navigation/chevron_right_24px.svg" alt=""></a>   
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-itens">
+                                        <label for="Estado-atividade">Estado da atividade</label>
+                                        <div class="input-relative">
+                                            <input id="estado-atividade" type="text">
+                                            <div class="input-absolute" >    
+                                                <p>Selecione</p>
+                                                <a href="#"><img src="/Eventos/ico/navigation/chevron_right_24px.svg" alt=""></a>   
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-container">
+                                    <div class="modal-itens">
+                                        <label for="observação">Observação</label>
+                                        <div class="input-relative">
+                                            <input id="observação" type="text">
+                                            <p class="parag">Ex: No foi possível contatar a atividade</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button>Salvar</button>
+                            </div>
                         </div>
                     </div>
 
                     <!-- pagina modal de adição de atividade -->
-                    <div id="pop-adiciona"></div>
+                    <div class="hider" id="pop_adiciona"></div>
+                    <div class="hider" id="modal2">
+                        <div id="modal-proxima">
+                            <div class="modal-header">
+                                <h2>Próximas atividades</h2>
+                                <button id="close_adicionar">x</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="modal-container">
+                                    <div class="modal-itens">
+                                        <label for="nome-atividade">Nome</label>
+                                        <div class="input-relative">
+                                            <input placeholder="Ex: Ligar para a entidade responsável" id="nome-atividade" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="modal-itens">
+                                        <label for="responsavel">Responsável</label>
+                                        <div class="input-relative">
+                                            <input placeholder="Luana" id="responsavel" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-container">
+                                    <div class="modal-itens">
+                                        <label for="data">Data</label>
+                                        <div class="input-relative">
+                                            <input placeholder="Dia" id="data" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="modal-itens">
+                                        <label for="hora">Hora</label>
+                                        <div class="input-relative">
+                                            <input placeholder="Hora" id="hora" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-container">
+                                    <div class="modal-itens">
+                                        <label for="tipo-atividade">Tipo de atividade</label>
+                                        <div class="input-relative">
+                                            <input id="tipo-atividade" type="text">
+                                            <div class="input-absolute" >    
+                                                <p>Selecione</p>
+                                                <a href="#"><img src="/Eventos/ico/navigation/chevron_right_24px.svg" alt=""></a>   
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-itens">
+                                        <label for="Estado-atividade">Estado da atividade</label>
+                                        <div class="input-relative">
+                                            <input id="estado-atividade" type="text">
+                                            <div class="input-absolute" >    
+                                                <p>Selecione</p>
+                                                <a href="#"><img src="/Eventos/ico/navigation/chevron_right_24px.svg" alt=""></a>   
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-container">
+                                    <div class="modal-itens">
+                                        <label for="observação">Observação</label>
+                                        <div class="input-relative">
+                                            <input placeholder="Ex: No foi possível contatar a atividade" id="observação" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button>Salvar</button>
+                            </div>
+                        </div>
+                    </div>
 
                     <!-- Informações e edições da pagina -->
                     <div class="itens">
@@ -75,11 +184,7 @@
                         <div class="info-container2">
                             <div class="pesquisa-filtro">
                                 <div class="input-pesquisa-con">
-                                    <input class="input-pesquisa" id="pesquisa-hitoricos" type="text">
-                                    <div class="label-pesquisa">
-                                        <label for="pesquisa-hitoricos">Pesquisar</label>
-                                        <img class="lupa" src="/Eventos/ico/Group 100.svg" alt="">
-                                    </div>
+                                    <input placeholder="Pesquisar" class="input-pesquisa" id="pesquisa-hitoricos" type="text">
                                 </div>
 
                                 <div class="filtro-container">
@@ -88,7 +193,7 @@
                                 </div>
                             </div>
 
-                                <button><span>+</span> Adicionar</button>
+                                <button id="adicionar_historico"><span>+</span> Adicionar</button>
                             </div>
                         
 
@@ -217,12 +322,13 @@
                                 <!-- rodape da tabela -->
                                 <tfoot>
                                     <tr>
-                                        <th colspan="7" id="avança-foot"><a href="#"><<</a> <a href="#"><</a> <a href="">1</a> <a href="">2</a> <a href="">3</a> <a href="">></a> <a href="">>></a></th>
+                                        <th colspan="7" id="avança-foot"><a href="#"><<</a> <a href="#"><</a> <a href="">2</a> <a href=""><span>3</span></a> <a href="">4</a> <a href="">></a> <a href="">>></a></th>
                                     </tr>
                                 </tfoot>
                             </table>
                         </div>
                     </div>
+                    
                 </div>
 
                 <footer class="footer">
@@ -232,12 +338,10 @@
                         </div>
                     </div>
                 </footer>
-            </div>       
-
-            
-            
+            </div>              
         </div>
     
     </section>
+    <script src="/Eventos/js/hist_atividade.js"></script>
 </body>
 </html>
