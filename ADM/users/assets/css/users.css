@@ -182,9 +182,13 @@ footer {
     padding-bottom: 100px;
 }
 
+.users-main-container {
+    min-height: calc(100vh - 166px);
+}
+
 #full-page {
     display: flex;
-    min-height: 100vh;
+    min-height: calc(100vh - 70px);
     height: 100%;
     background-color: #F2F2F2;
 }
@@ -260,7 +264,6 @@ nav {
     margin: 20px;
     background: #f2f2f2;
 }
-
 
 table {
     text-align: left;

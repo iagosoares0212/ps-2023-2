@@ -45,220 +45,257 @@
                 </nav>
             </div>
 
+            <div id="first-funnel-modal">
+                <div class="first-popup">
+                    <div class="first-popup-content">
+                        <p><strong>Tem certeza que deseja apagar esse evento do funil?</strong></p>
+                    </div>
+                    <div class="first-close-popup">
+                        <a href="#"><img src="assets/img/navbar-icons/green close popup icon.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="first-popup-buttons">
+                    <div class="first-popup-yes-button">
+                        <button class="yes-button">
+                            <p class="yes-button-text">Sim</p>
+                        </button>
+                    </div>
+                    <div class="first-popup-no-button"> 
+                        <button class="no-button">
+                            <p class="no-button-text">Não</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="funnel-modal" >
+                <div class="popup">
+                    <div class="popup-content">
+                        <img src="assets/img/navbar-icons/sucess popup icon.svg" alt="">
+                        <p> O evento <strong>Nome do evento</strong> foi apagado com sucesso!</p>
+                    </div>
+                    <div class="close-popup">
+                        <a href="#"><img src="assets/img/navbar-icons/close popup icon.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
             <!-- container da página -->
             <div id="funnel-container">
-
-                <!-- título e informações da página -->
-                <div class="funnel-itens">
-
-                    <div class="title-container">
-                        <strong class="funnel-title">Funil</strong>
-                    </div>
-
-                    <!-- caixa de pesquisa -->
-                    <div class="search-container">
-                        <div class="sub-search-container">
-                            <div class="search-input-container">
-                                <input class="search-input" placeholder="Pesquisar"  type="text">
-                                <a href="#"><img class="search-icon" src="assets/img/navbar-icons/search icon.svg" alt=""></a>
-
-                            </div>
-                            <div class="filter-container">
-                                <a id="filter-icon" href="#"> <img src="assets/img/navbar-icons/search filters icon.svg" alt="Ícone de filtros"></a>
-                                <a href="">Filtros</a>
-                            </div>
+                <div class="funnel-main-container">
+                    
+                    <!-- título e informações da página -->
+                    <div class="funnel-itens">
+    
+                        <div class="title-container">
+                            <strong class="funnel-title">Funil</strong>
                         </div>
-
-
-                        <!-- botão para cadastro de novos eventos -->
-                        <button>Cadastrar evento</button>
+    
+                        <!-- caixa de pesquisa -->
+                        <div class="search-container">
+                            <div class="sub-search-container">
+                                <div class="search-input-container">
+                                    <input class="search-input" placeholder="Pesquisar"  type="text">
+                                    <a href="#"><img class="search-icon" src="assets/img/navbar-icons/search icon.svg" alt=""></a>
+    
+                                </div>
+                                <div class="filter-container">
+                                    <a id="filter-icon" href="#"> <img src="assets/img/navbar-icons/search filters icon.svg" alt="Ícone de filtros"></a>
+                                    <a href="">Filtros</a>
+                                </div>
+                            </div>
+    
+    
+                            <!-- botão para cadastro de novos eventos -->
+                            <button>Cadastrar evento</button>
+                        </div>
+    
+                        <!-- resultados da pesquisa -->
+                        <div class="results-container">Mostrando 10 de 51 resultados</div>
                     </div>
-
-                    <!-- resultados da pesquisa -->
-                    <div class="results-container">Mostrando 10 de 51 resultados</div>
-                </div>
-
-                <!-- tabela do funil -->
-                <div class="funnel-table">
-                    <div class="table">
-                        <table>
-
-                            <!-- cabeçário da tabela -->
-                            <thead>
-                                <tr>
-                                    <th>Nome</th>
-                                    <th>Etapa</th>
-                                    <th>Entidade</th>
-                                    <th>Público</th>
-                                    <th>Data do evento</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-
-                            <!-- corpo da tabela -->
-                            <tbody>
-
-                                <!-- elementos da tabela -->
-                                <tr>
-                                    <td>
-                                        <div class="funnel-id">
-                                            <a href="#">Nome do evento</a>
-                                        </div>
-                                    </td>
-                                    <td class="in-training"><button>Em Captação</button></td>
-                                    <td>
-                                        <a class="table-entity" href="">Associação de Médicos do RN</a>
-                                    </td>
-                                    <td>5000</td>
-                                    <td>05/11/2020</td>
-                                    <td class="delete-icon-directory"><a href="#"><img src="assets/img/table-icons/delete icon.svg" alt="Exluir"></a></td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="funnel-id">
-                                            <a href="#">Nome do evento</a>
-                                        </div>
-                                    </td>
-                                    <td class="lost"><button>Perdido</button></td>
-                                    <td>
-                                        <a class="table-entity" href="">Associação de Médicos do RN</a>
-                                    </td>
-                                    <td>5000</td>
-                                    <td>05/11/2020</td>
-                                    <td class="delete-icon-directory"><a href="#"><img src="assets/img/table-icons/delete icon.svg" alt="Exluir"></a></td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="funnel-id">
-                                            <a href="#">Nome do evento</a>
-                                        </div>
-                                    </td>
-                                    <td class="captured"><button>Captado</button></td>
-                                    <td>
-                                        <a class="table-entity" href="">Associação de Médicos do RN</a>
-                                    </td>
-                                    <td>5000</td>
-                                    <td>05/11/2020</td>
-                                    <td class="delete-icon-directory"><a href="#"><img src="assets/img/table-icons/delete icon.svg" alt="Exluir"></a></td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="funnel-id">
-                                            <a href="#">Nome do evento</a>
-                                        </div>
-                                    </td>
-                                    <td class="in-prospecting"><button>Em Prospecção</button></td>
-                                    <td>
-                                        <a class="table-entity" href="">Associação de Médicos do RN</a>
-                                    </td>
-                                    <td>5000</td>
-                                    <td>05/11/2020</td>
-                                    <td class="delete-icon-directory"><a href="#"><img src="assets/img/table-icons/delete icon.svg" alt="Exluir"></a></td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="funnel-id">
-                                            <a href="#">Nome do evento</a>
-                                        </div>
-                                    </td>
-                                    <td class="captured"><button>Captado</button></td>
-                                    <td>
-                                        <a class="table-entity" href="">Associação de Médicos do RN</a>
-                                    </td>
-                                    <td>5000</td>
-                                    <td>05/11/2020</td>
-                                    <td class="delete-icon-directory"><a href="#"><img src="assets/img/table-icons/delete icon.svg" alt="Exluir"></a></td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="funnel-id">
-                                            <a href="#">Nome do evento</a>
-                                        </div>
-                                    </td>
-                                    <td class="in-research"><button>Em pesquisa</button></td>
-                                    <td>
-                                        <a class="table-entity" href="">Associação de Médicos do RN</a>
-                                    </td>
-                                    <td>5000</td>
-                                    <td>05/11/2020</td>
-                                    <td class="delete-icon-directory"><a href="#"><img src="assets/img/table-icons/delete icon.svg" alt="Exluir"></a></td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="funnel-id">
-                                            <a href="#">Nome do evento</a>
-                                        </div>
-                                    </td>
-                                    <td class="supported"><button>Apoiado</button></td>
-                                    <td>
-                                        <a class="table-entity" href="">Associação de Médicos do RN</a>
-                                    </td>
-                                    <td>5000</td>
-                                    <td>05/11/2020</td>
-                                    <td class="delete-icon-directory"><a href="#"><img src="assets/img/table-icons/delete icon.svg" alt="Exluir"></a></td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="funnel-id">
-                                            <a href="#">Nome do evento</a>
-                                        </div>
-                                    </td>
-                                    <td class="captured"><button>Captado</button></td>
-                                    <td>
-                                        <a class="table-entity" href="">Associação de Médicos do RN</a>
-                                    </td>
-                                    <td>5000</td>
-                                    <td>05/11/2020</td>
-                                    <td class="delete-icon-directory"><a href="#"><img src="assets/img/table-icons/delete icon.svg" alt="Exluir"></a></td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="funnel-id">
-                                            <a href="#">Nome do evento</a>
-                                        </div>
-                                    </td>
-                                    <td class="lost"><button>Perdido</button></td>
-                                    <td>
-                                        <a class="table-entity" href="">Associação de Médicos do RN</a>
-                                    </td>
-                                    <td>5000</td>
-                                    <td>05/11/2020</td>
-                                    <td class="delete-icon-directory"><a href="#"><img src="assets/img/table-icons/delete icon.svg" alt="Exluir"></a></td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="funnel-id">
-                                            <a href="#">Nome do evento</a>
-                                        </div>
-                                    </td>
-                                    <td class="in-prospecting"><button>Em Prospecção</button></td>
-                                    <td>
-                                        <a class="table-entity" href="">Associação de Médicos do RN</a>
-                                    </td>
-                                    <td>5000</td>
-                                    <td>05/11/2020</td>
-                                    <td class="delete-icon-directory"><a href="#"><img src="assets/img/table-icons/delete icon.svg" alt="Exluir"></a></td>
-                                </tr>
-
-                            </tbody>
-
-                            <!-- rodape da tabela -->
-                            <tfoot>
-
-                                <!-- sistema de páginas -->
-                                <tr>
-                                    <th colspan="6" id="advance-page">
-                                        <a href="#"><img src="assets/img/table-icons/previous page icon.svg" alt=""><img src="assets/img/table-icons/previous page icon.svg" alt=""></a>
-                                        <a href="#"><img src="assets/img/table-icons/previous page icon.svg" alt=""></a>
-                                        <a class="sub-button" href="#">2</a>
-                                        <a class="principal-button" href="#">3</a>
-                                        <a class="sub-button" href="#">4</a>
-                                        <a href="#"><img src="assets/img/table-icons/next page icon.svg" alt=""></a>
-                                        <a href="#"><img src="assets/img/table-icons/next page icon.svg" alt=""><img src="assets/img/table-icons/next page icon.svg" alt=""></a>
-                                    </th>
-                                </tr>
-                            </tfoot>
-                        </table>
+    
+                    <!-- tabela do funil -->
+                    <div class="funnel-table">
+                        <div class="table">
+                            <table>
+    
+                                <!-- cabeçário da tabela -->
+                                <thead>
+                                    <tr>
+                                        <th>Nome</th>
+                                        <th>Etapa</th>
+                                        <th>Entidade</th>
+                                        <th>Público</th>
+                                        <th>Data do evento</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+    
+                                <!-- corpo da tabela -->
+                                <tbody>
+    
+                                    <!-- elementos da tabela -->
+                                    <tr>
+                                        <td>
+                                            <div class="funnel-id">
+                                                <a href="#">Nome do evento</a>
+                                            </div>
+                                        </td>
+                                        <td class="in-training"><button>Em Captação</button></td>
+                                        <td>
+                                            <a class="table-entity" href="">Associação de Médicos do RN</a>
+                                        </td>
+                                        <td>5000</td>
+                                        <td>05/11/2020</td>
+                                        <td class="delete-icon-directory"><a href="#"><img src="assets/img/table-icons/delete icon.svg" alt="Exluir"></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="funnel-id">
+                                                <a href="#">Nome do evento</a>
+                                            </div>
+                                        </td>
+                                        <td class="lost"><button>Perdido</button></td>
+                                        <td>
+                                            <a class="table-entity" href="">Associação de Médicos do RN</a>
+                                        </td>
+                                        <td>5000</td>
+                                        <td>05/11/2020</td>
+                                        <td class="delete-icon-directory"><a href="#"><img src="assets/img/table-icons/delete icon.svg" alt="Exluir"></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="funnel-id">
+                                                <a href="#">Nome do evento</a>
+                                            </div>
+                                        </td>
+                                        <td class="captured"><button>Captado</button></td>
+                                        <td>
+                                            <a class="table-entity" href="">Associação de Médicos do RN</a>
+                                        </td>
+                                        <td>5000</td>
+                                        <td>05/11/2020</td>
+                                        <td class="delete-icon-directory"><a href="#"><img src="assets/img/table-icons/delete icon.svg" alt="Exluir"></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="funnel-id">
+                                                <a href="#">Nome do evento</a>
+                                            </div>
+                                        </td>
+                                        <td class="in-prospecting"><button>Em Prospecção</button></td>
+                                        <td>
+                                            <a class="table-entity" href="">Associação de Médicos do RN</a>
+                                        </td>
+                                        <td>5000</td>
+                                        <td>05/11/2020</td>
+                                        <td class="delete-icon-directory"><a href="#"><img src="assets/img/table-icons/delete icon.svg" alt="Exluir"></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="funnel-id">
+                                                <a href="#">Nome do evento</a>
+                                            </div>
+                                        </td>
+                                        <td class="captured"><button>Captado</button></td>
+                                        <td>
+                                            <a class="table-entity" href="">Associação de Médicos do RN</a>
+                                        </td>
+                                        <td>5000</td>
+                                        <td>05/11/2020</td>
+                                        <td class="delete-icon-directory"><a href="#"><img src="assets/img/table-icons/delete icon.svg" alt="Exluir"></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="funnel-id">
+                                                <a href="#">Nome do evento</a>
+                                            </div>
+                                        </td>
+                                        <td class="in-research"><button>Em pesquisa</button></td>
+                                        <td>
+                                            <a class="table-entity" href="">Associação de Médicos do RN</a>
+                                        </td>
+                                        <td>5000</td>
+                                        <td>05/11/2020</td>
+                                        <td class="delete-icon-directory"><a href="#"><img src="assets/img/table-icons/delete icon.svg" alt="Exluir"></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="funnel-id">
+                                                <a href="#">Nome do evento</a>
+                                            </div>
+                                        </td>
+                                        <td class="supported"><button>Apoiado</button></td>
+                                        <td>
+                                            <a class="table-entity" href="">Associação de Médicos do RN</a>
+                                        </td>
+                                        <td>5000</td>
+                                        <td>05/11/2020</td>
+                                        <td class="delete-icon-directory"><a href="#"><img src="assets/img/table-icons/delete icon.svg" alt="Exluir"></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="funnel-id">
+                                                <a href="#">Nome do evento</a>
+                                            </div>
+                                        </td>
+                                        <td class="captured"><button>Captado</button></td>
+                                        <td>
+                                            <a class="table-entity" href="">Associação de Médicos do RN</a>
+                                        </td>
+                                        <td>5000</td>
+                                        <td>05/11/2020</td>
+                                        <td class="delete-icon-directory"><a href="#"><img src="assets/img/table-icons/delete icon.svg" alt="Exluir"></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="funnel-id">
+                                                <a href="#">Nome do evento</a>
+                                            </div>
+                                        </td>
+                                        <td class="lost"><button>Perdido</button></td>
+                                        <td>
+                                            <a class="table-entity" href="">Associação de Médicos do RN</a>
+                                        </td>
+                                        <td>5000</td>
+                                        <td>05/11/2020</td>
+                                        <td class="delete-icon-directory"><a href="#"><img src="assets/img/table-icons/delete icon.svg" alt="Exluir"></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="funnel-id">
+                                                <a href="#">Nome do evento</a>
+                                            </div>
+                                        </td>
+                                        <td class="in-prospecting"><button>Em Prospecção</button></td>
+                                        <td>
+                                            <a class="table-entity" href="">Associação de Médicos do RN</a>
+                                        </td>
+                                        <td>5000</td>
+                                        <td>05/11/2020</td>
+                                        <td class="delete-icon-directory"><a href="#"><img src="assets/img/table-icons/delete icon.svg" alt="Exluir"></a></td>
+                                    </tr>
+    
+                                </tbody>
+    
+                                <!-- rodape da tabela -->
+                                <tfoot>
+    
+                                    <!-- sistema de páginas -->
+                                    <tr>
+                                        <th colspan="6" id="advance-page">
+                                            <a href="#"><img src="assets/img/table-icons/previous page icon.svg" alt=""><img src="assets/img/table-icons/previous page icon.svg" alt=""></a>
+                                            <a href="#"><img src="assets/img/table-icons/previous page icon.svg" alt=""></a>
+                                            <a class="sub-button" href="#">2</a>
+                                            <a class="principal-button" href="#">3</a>
+                                            <a class="sub-button" href="#">4</a>
+                                            <a href="#"><img src="assets/img/table-icons/next page icon.svg" alt=""></a>
+                                            <a href="#"><img src="assets/img/table-icons/next page icon.svg" alt=""><img src="assets/img/table-icons/next page icon.svg" alt=""></a>
+                                        </th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
                     </div>
                 </div>
 

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/users-register/assets/css/users-register.css">
+    <title>Cadastrar um usuário (ADM)</title>
+</head>
+<body>
+
+    <!-- cabeçário da página-->
+    <header>
+        <div class="logo">
+            <a class="logo-icon" href=""><img src="assets/img/navbar-icons/eject icon.svg" alt=""></a>
+        </div>
+
+        <div class="profile-picture">
+            <a class="profile-picture-icon" href="#">FOTO</a>    
+        </div>
+    </header>
+
+    <!-- página -->
+    <section id="users-register">
+        <div id="full-page">
+
+            <!-- barra lateral -->
+            <div id="left-navbar">
+                <nav>
+
+                    <a class="home-icon" href="#"><img src="assets/img/navbar-icons/home icon.svg" alt="">
+                        <span class="navbar-text">Início</span>
+                    </a>
+                    <a class="icon" href="#"><img src="assets/img/navbar-icons/funnel icon.svg" alt="">
+                        <span class="navbar-text">Funil</span>    
+                    </a>
+                    <a class="icon" href="#"><img src="assets/img/navbar-icons/entity icon.svg" alt="">
+                        <span class="navbar-text">Entidades</span>                      
+                    </a>
+                    <a class="icon" href="#"><img src="assets/img/navbar-icons/filters icon.svg" alt="">
+                        <span class="navbar-text">Filtros</span>
+                    </a>
+                    <a class="icon" href="#"><img src="assets/img/navbar-icons/users icon.svg" alt="">
+                        <span class="navbar-text">Usuários</span>
+                    </a>
+                </nav>
+            </div>
+
+            <div id="users-register-modal" >
+                <div class="popup">
+                    <div class="popup-content">
+                        <img src="assets/img/navbar-icons/sucess popup icon.svg" alt="">
+                        <p> O usuário <strong>Nome do Usuário</strong> foi cadastrado com sucesso!</p>
+                    </div>
+                    <div class="close-popup">
+                        <a href="#"><img src="assets/img/navbar-icons/close popup icon.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- container da pagina -->
+            <div id="users-register-container">
+                <div class="users-register-main-container">
+                    <div class="title-container">
+                        <a href="">Usuários</a>
+                        <img src="assets/img/navbar-icons/side nav icon.svg" alt="">
+                        <strong class="users-register-title">Cadastrar usuário</strong>
+                    </div>
+                    
+
+                    <div class="users-register-main-content">
+                        
+                        <div class="main-title"> Dados Cadastrais </div>
+
+                        <div class="info-box">
+                            <div class="personal-info">
+                                <div class="section-title"> INFORMAÇÕES PESSOAIS </div>
+                                
+                                <div class="middle-info-box">
+                                    <div class="user-register-profile-icon"><a href="#"><img src="assets/img/navbar-icons/user register profile icon.svg" alt=""></a></div>
+
+                                    <div class="aside-middle-box">
+                                        <div class="users-register-name">
+                                            <p>Nome do usuário</p>
+                                            <input placeholder="Ex: Luana Gomes" type="text" name="" id="">
+                                        </div>
+                                        <div class="sub-aside-middle-box">
+                                            <div class="users-register-role">
+                                                <p>Cargo</p>
+                                                <input placeholder="Ex: Gerente Executiva" type="text">
+                                            </div>
+                                            <div class="users-register-contact">
+                                                <p>Telefone</p>
+                                                <input placeholder="Ex: (99) 9 9999-9999" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="end-box">
+                                            <div class="radio-container">
+                                                <input class="radio" type= "radio" name="theradio" id="user-radio" >
+                                                <label for="theradio">Usuários</label>
+                                            </div>
+                                            <div class="radio-container">
+                                                <input class="radio" type= "radio" name="theradio" id="adm-radio" >
+                                                <label for="the radio">Admnistrador</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="separation-bar">
+                                <img src="assets/img/navbar-icons/small separation bar.svg" alt="">
+                            </div>
+
+                            
+                            <div class="account-info">
+                                <div class="second-section-title"> INFORMAÇÕES DA CONTA </div>
+
+                                <div class="users-register-account">
+                                    <p>Email</p>
+                                    <input placeholder="Ex: exemplo@gmail.com" type="text" name="" id="">
+                                </div>
+                                            
+                                <div class="users-register-password">
+                                    <p>Senha</p>
+                                    <input placeholder="Ex: 5zbx@STSF0AdZ_h86@" type="text">
+                                </div>
+
+                                <div class="users-register-button">
+                                    <button>
+                                        <p class="users-register-button-text">Cadastrar usuário</p>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- rodapé -->
+                <footer>
+                    <div class="footer-text"> 
+                        <p class="bold-text">EJECT CVB </p><p> © 2022. Desenvolvido pela</p> <p class="bold-text">EJECT</p> <p><img src="assets/img/footer-icons/footer eject icon.svg" alt=""></p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+</html>

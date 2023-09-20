@@ -195,11 +195,142 @@ footer {
     width: 100%;
 }
 
+.funnel-main-container {
+    min-height: calc(100vh - 166px);
+}
+
 #full-page {
     display: flex;
     min-height: 100vh;
     height: 100%;
     background-color: #F2F2F2;
+}
+
+#first-funnel-modal {
+    width: 505px;
+    height: 245px;
+    background-color: #fafafa;
+    position: fixed;
+    border: 1px solid #5B827E;
+    left: 40%;
+    top: 45%;
+    border-radius: 5px;
+    display: none;
+}
+
+
+.first-popup {
+    height: calc(245px - 70px);
+    display: flex;
+}
+
+.first-popup-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-popup-content p {
+    padding: 0 20px 0 60px;
+    font-weight: 500;
+    font-size: 24px;
+    color: #0D132B;
+}
+
+.first-close-popup {
+    padding: 20px;
+}
+
+.first-popup-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-popup-yes-button{
+    padding-right: 30px;
+}
+
+.yes-button {
+    width: 153px;
+    height: 29px;
+    flex-shrink: 0;
+    color: #0D132B;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border: 1px solid #FBC600;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.yes-button:hover {
+    background-color: #bbbbbb48;
+}
+
+.no-button {
+    width: 153px;
+    height: 29px;
+    flex-shrink: 0;
+    color: #0D132B;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-color: transparent;
+    border-radius: 5px;
+    background: #FBC600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.no-button:hover {
+    background-color: #daaa00fd;
+}
+
+#funnel-modal {
+    width: 505px;
+    height: 245px;
+    background-color: #fafafa;
+    position: fixed;
+    border: 1px solid #5B827E;
+    left: 40%;
+    top: 45%;
+    border-radius: 5px;
+    display: none;
+}
+
+.popup {
+    display: flex;
+}
+
+.close-popup {
+    padding: 20px;
+}
+
+.popup-content {
+    height: calc(245px - 17px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-content img{
+    padding-left: 50px;
+}
+
+.popup-content p {
+    padding-left: 20px;
+    font-weight: 500;
+    font-size: 24px;
+    color: #0D132B;
 }
 
 #funnel-container {
