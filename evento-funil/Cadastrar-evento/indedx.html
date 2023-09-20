@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Cadastrar evento</title>
+  </head>
+  <body>
+        <header>
+          <!-- cabeçário da página-->
+
+          <div class="logo">
+            <a class="logo-icon" href="../evento-funil/index.html"
+              ><img src="../assets/ejecticon.png" alt=""
+            /></a>
+          </div>
+
+          <div class="profile-picture">
+            <a class="profile-picture-icon" href="#">FOTO</a>
+          </div>
+        </header>
+
+        <div class="container">
+          <!-- barra lateral -->
+          <div id="left-navbar">
+            <nav>
+              <a class="home-icon" href="#"
+                ><img src="../assets/homeicon.svg" alt="" />
+                <span class="navbar-text">Início</span>
+              </a>
+              <a class="icon" href="#"
+                ><img src="../assets/funnelicon.svg" alt="" />
+                <span class="navbar-text">Funil</span>
+              </a>
+              <a class="icon" href="#"
+                ><img src="../assets/entityicon.png" alt="" />
+                <span class="navbar-text">Entidades</span>
+              </a>
+              <a class="icon" href="#"
+                ><img src="../assets/filtrosvg.svg" alt="" />
+                <span class="navbar-text">Filtros</span>
+              </a>
+              <a class="icon" href="#"
+                ><img src="../assets/usuario.svg" alt="" />
+                <span class="navbar-text">Usuários</span>
+              </a>
+            </nav>
+          </div>
+
+          <div class="conteudo-da-pagina">
+            <div class="Pag-top">
+              <h4>Funil</h4>
+              <h3>&gt</h3>
+              <h1>Cadastrar evento</h1>
+            </div>
+
+            <div class="infos-top">
+              <h3 class="titulo-label">
+                <label for="Nome-evento"> Nome do evento</label>
+                <input
+                  class="infos-input0"
+                  placeholder="Ex: Maumau"
+                  type="text"
+                />
+              </h3>
+
+              <h3 class="titulo-label">
+                <label for="infos-input">Entidade Local (Regional)</label>
+                <input
+                  size="55"
+                  class="infos-input"
+                  placeholder="SELECIONE"
+                  name="Entidade-loca"
+                  id="Entidade-local"
+                  list="Nivel"
+                  type="text"
+                />
+              </h3>
+              <datalist id="Nivel">
+                <option value="">Opções :</option>
+                <option value="1">Opção</option>
+                <option value="2">Opção</option>
+                <option value="3">Opção</option>
+              </datalist>
+
+              <h3 class="titulo-label">
+                <label for="infos-input">Entidade Nacional</label>
+                <input
+                  size="30"
+                  class="infos-input"
+                  placeholder="SELECIONE"
+                  name="infos-input"
+                  id="infos-input"
+                  list="Nivel"
+                  type="text"
+                />
+              </h3>
+              <datalist id="Nivel">
+                <option value="">Opções :</option>
+                <option value="1">Opção</option>
+                <option value="2">Opção</option>
+                <option value="3">Opção</option>
+              </datalist>
+
+              <h3 class="titulo-label">
+                <label for="infos-input">Entidade Internacional</label>
+                <input
+                  size="45"
+                  class="infos-input"
+                  placeholder="SELECIONE"
+                  name="infos-input"
+                  id="infos-input"
+                  list="Nivel"
+                  type="text"
+                />
+              </h3>
+              <datalist id="Nivel">
+                <option value="">Opções :</option>
+                <option value="1">Opção</option>
+                <option value="2">Opção</option>
+                <option value="3">Opção</option>
+              </datalist>
+
+              <h3 class="titulo-label">
+                <label for="infos-input">Edição</label>
+                <input
+                  size="10"
+                  class="infos-input"
+                  placeholder="SELECIONE"
+                  list="Nivel"
+                  type="text"
+                />
+              </h3>
+
+              <datalist id="Nivel">
+                <option value="">Opções :</option>
+                <option value="1">Opção</option>
+                <option value="2">Opção</option>
+                <option value="3">Opção</option>
+              </datalist>
+
+              <h3 class="titulo-label">
+                <label for="infos-input">Estágio do evento</label>
+                <input
+                  size="35"
+                  class="infos-input"
+                  placeholder="SELECIONE"
+                  name="infos-input"
+                  id="infos-input"
+                  list="Nivel"
+                  type="text"
+                />
+              </h3>
+              <datalist id="Nivel">
+                <option value="">Opções :</option>
+                <option value="1">Opção</option>
+                <option value="2">Opção</option>
+                <option value="3">Opção</option>
+              </datalist>
+
+              <h3 class="titulo-label">
+                <label for="infos-input">Abrangência</label>
+                <input
+                  size="35"
+                  class="infos-input"
+                  placeholder="SELECIONE"
+                  name="infos-input"
+                  id="infos-input"
+                  list="Nivel"
+                  type="text"
+                />
+              </h3>
+              <datalist id="Nivel">
+                <option value="">Opções :</option>
+                <option value="1">Opção</option>
+                <option value="2">Opção</option>
+                <option value="3">Opção</option>
+              </datalist>
+
+              <h3 class="titulo-label">
+                <label for="infos-input">Contato da entidade</label>
+                <input
+                  size="30"
+                  class="infos-input"
+                  placeholder="(00)00000-0000"
+                  name="infos-input"
+                  type="text"
+                />
+              </h3>
+
+              <h3 class="titulo-label">
+                <label for="infos-input">Periodicidade</label>
+                <input
+                  size="40"
+                  class="infos-input"
+                  placeholder="SELECIONE"
+                  name="infos-input"
+                  id="infos-input"
+                  list="Nivel"
+                  type="text"
+                />
+              </h3>
+              <datalist id="Nivel">
+                <option value="">Opções :</option>
+                <option value="1">Opção</option>
+                <option value="2">Opção</option>
+                <option value="3">Opção</option>
+              </datalist>
+
+              <h3 class="titulo-label">
+                <label for="infos-input">Estimativa de público</label>
+                <input
+                  size="30"
+                  class="infos-input"
+                  placeholder="Ex:8000"
+                  type="text"
+                />
+              </h3>
+
+              <h3 class="titulo-label">
+                <label for="infos-input">Categoria do evento</label>
+                <input
+                  size="30"
+                  class="infos-input"
+                  placeholder="SELECIONE"
+                  name="infos-input"
+                  id="infos-input"
+                  list="Nivel"
+                  type="text"
+                />
+              </h3>
+              <datalist id="Nivel">
+                <option value="">Opções :</option>
+                <option value="1">Opção</option>
+                <option value="2">Opção</option>
+                <option value="3">Opção</option>
+              </datalist>
+              <h3 class="titulo-label">
+                <label for="infos-input">Captar em</label>
+                <input
+                  size="20"
+                  class="infos-input"
+                  placeholder="Ex:31/12/2023"
+                  type="text"
+                />
+              </h3>
+
+              <h3 class="titulo-label">
+                <label for="infos-input">Captado em</label>
+                <input
+                  size="20"
+                  class="infos-input"
+                  placeholder="Ex:31/12/2023"
+                  type="text"
+                />
+              </h3>
+
+              <h3 class="titulo-label">
+                <label for="infos-input">Captado para</label>
+                <input
+                  size="30"
+                  class="infos-input"
+                  placeholder="Ex:31/12/2024"
+                  type="text"
+                />
+              </h3>
+              <h3 class="titulo-label">
+                <label for="infos-input">Responsável pelo evento</label>
+                <input
+                  size="30"
+                  class="infos-input"
+                  placeholder="Ex: Mauricio Santos"
+                  type="text"
+                />
+              </h3>
+
+              <h3 class="titulo-label">
+                <label for="infos-input">Área de atuação</label>
+                <input
+                  size="40"
+                  class="infos-input"
+                  placeholder="SELECIONE"
+                  name="infos-input"
+                  id="infos-input"
+                  list="Nivel"
+                  type="text"
+                />
+              </h3>
+              <datalist id="Nivel">
+                <option value="">Opções :</option>
+                <option value="1">Opção</option>
+                <option value="2">Opção</option>
+                <option value="3">Opção</option>
+              </datalist>
+              <h3 class="titulo-label">
+                <label for="infos-input">Duração do evento</label>
+                <input
+                  size="30"
+                  class="infos-input"
+                  placeholder="Ex: 3 dias"
+                  type="text"
+                />
+              </h3>
+
+              <h3 class="titulo-label">
+                <label for="infos-input">Concorrentes</label>
+                <input
+                  size="40"
+                  class="infos-input"
+                  placeholder="Ex: Fortaleza, Natal"
+                  type="text"
+                />
+              </h3>
+              <h3 class="titulo-label">
+                <label for="infos-input">Local do evento</label>
+                <input
+                  size="50"
+                  class="infos-input"
+                  placeholder="Ex: João Pessoa"
+                  type="text"
+                />
+              </h3>
+
+              <div class="div-p-evento">
+                <h3>
+                  <label class="titulo-evento" for="infos-input"
+                    >Periodo do evento
+                  </label>
+                </h3>
+                <div class="div-data-evento">
+                  <h3 class="titulo-label-a">
+                    <p>De:</p>
+                    <input
+                      size="50"
+                      class="infos-input"
+                      placeholder="Ex: 20/12/2009"
+                      type="text"
+                    />
+                  </h3>
+
+                  <h3 class="titulo-label-a">
+                    <p>a:</p>
+                    <input
+                      size="50"
+                      class="infos-input"
+                      placeholder="Ex: 24/12/2009"
+                      type="text"
+                    />
+                  </h3>
+                </div>
+              </div>
+              <h3 class="titulo-label">
+                <label for="infos-input">Empresas envolvidas </label>
+                <input
+                  size="50"
+                  class="infos-input"
+                  placeholder="Ex: Ambev"
+                  type="text"
+                />
+              </h3>
+
+              <div class="div-captacao">
+                <h3>Custo da Captação</h3>
+                <a href="">+ Adicionar Custo</a>
+                <p>Viagem de uber - R$25,00 - 25/12/2021 -Luan Costa</p>
+                <p class="valor">Total: R$: 25,00</p>
+              </div>
+
+              <h3 class="titulo-label">
+                <label for="infos-input">Tipo de candidatura</label>
+                <input
+                  size="40"
+                  class="infos-input"
+                  placeholder="SELECIONE"
+                  name="infos-input"
+                  id="infos-input"
+                  list="Nivel"
+                  type="text"
+                />
+              </h3>
+              <datalist id="Nivel">
+                <option value="">Opções :</option>
+                <option value="1">Opção</option>
+                <option value="2">Opção</option>
+                <option value="3">Opção</option>
+              </datalist>
+              <div class="infos-tecnicas-top">
+                <h2>Informações técnicas</h2>
+              </div>
+              <div class="infos-tecnicas">
+                <h3 class="titulo-label">
+                  <label for="infos-input">Quantidade de salas paralelas</label>
+                  <input
+                    size="40"
+                    class="infos-input"
+                    placeholder="Ex: 2"
+                    type="text"
+                  />
+                </h3>
+
+                <h3 class="titulo-label">
+                  <label for="infos-input"
+                    >Nº de pessoas no salão principal</label
+                  >
+                  <input
+                    size="40"
+                    class="infos-input"
+                    placeholder="Ex: 1500"
+                    type="text"
+                  />
+                </h3>
+                <div class="radio-button">
+                  <input type="radio" name="webmaster" value="sim" /> Sim<br />
+                  <input type="radio" name="webmaster" value="nao" /> Não<br />
+                  <div>
+                    <h3 class="exposicao-label">
+                      <label for="infos-input">Area de exposição:</label>
+                    </h3>
+                    <input
+                      size="40"
+                      class="infos-input"
+                      placeholder="Ex: 2"
+                      type="text"
+                    />
+                  </div>
+                </div>
+                <h3 class="titulo-label">
+                  <label for="infos-input">Informações Adicionais</label>
+                  <input
+                    size="40"
+                    class="infos-input"
+                    placeholder="Ex: Rua dos Navegantes, 958,"
+                    type="text"
+                  />
+                </h3>
+              </div>
+              <div class="Pag-final">
+                <div class="anexar-doc">
+                  <h3>Anexar documento</h3>
+                  <img class="mais" src="../assets/mais.svg" alt="" />
+                </div>
+                <div>
+                  <button class="anexar-button">Salvar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </body>
+    </html>
+  </body>
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Evento-Funil</title>
+  </head>
+  <body>
+    <header>
+      <!-- cabeçário da página-->
+
+      <div class="logo">
+        <a class="logo-icon" href=""
+          ><img src="../assets/ejecticon.png" alt=""
+        /></a>
+      </div>
+
+      <div class="profile-picture">
+        <a class="profile-picture-icon" href="#">FOTO</a>
+      </div>
+    </header>
+
+    <div class="container">
+      <!-- barra lateral -->
+      <div id="left-navbar">
+        <nav>
+          <a class="home-icon" href="#"
+            ><img src="../assets/homeicon.svg" alt="" />
+            <span class="navbar-text">Início</span>
+          </a>
+          <a class="icon" href="#"
+            ><img src="../assets/funnelicon.svg" alt="" />
+            <span class="navbar-text">Funil</span>
+          </a>
+          <a class="icon" href="#"
+            ><img src="../assets/entityicon.png" alt="" />
+            <span class="navbar-text">Entidades</span>
+          </a>
+          <a class="icon" href="#"
+            ><img src="../assets/filtrosvg.svg" alt="" />
+            <span class="navbar-text">Filtros</span>
+          </a>
+          <a class="icon" href="#"
+            ><img src="../assets/usuario.svg" alt="" />
+            <span class="navbar-text">Usuários</span>
+          </a>
+        </nav>
+      </div>
+
+      <div class="conteudo-da-pagina">
+        <div class="Pag-top">
+          <h1>Funil</h1>
+          <div class="Acoes">
+            <div class="Acoes-Filtros">
+              <div class="div-pesquisa">
+                <input type="text" placeholder="Pesquisar" />
+                <img src="../assets/procurar.png" />
+              </div>
+
+              <a href="#openModal"
+                ><img class="funil" src="../assets/filtro.png" alt=""
+              /></a>
+
+              <div id="openModal" class="modalDialog">
+                <div class="allinputs">
+                  <a href="#close" title="Close" class="close">X</a>
+                  <h2>Filtros <button class="popupbutton">Aplicar</button></h2>
+                  <label for="Ano-busca"> Ano de busca</label>
+                  <input
+                    placeholder="Ex:2020"
+                    name="Ano-busca"
+                    id="Ano-busca"
+                    type="text"
+                  />
+
+                  <label for="Nivel-funil"> Nível do funil</label>
+                  <input
+                    placeholder="Nivel do funil"
+                    name="Nivel-funil"
+                    id="Nivel-funil"
+                    list="Nivel"
+                    type="text"
+                  />
+                  <datalist id="Nivel">
+                    <option value="">Opções :</option>
+                    <option value="1">Opção</option>
+                    <option value="2">Opção</option>
+                    <option value="3">Opção</option>
+                  </datalist>
+
+                  <label for="Area-atuação"> Área de atuação</label>
+                  <input
+                    placeholder="Médica"
+                    name="Area-atuação"
+                    id="Area-atuação"
+                    list="Nivel"
+                    type="text"
+                  />
+                  <datalist id="Nivel">
+                    <option value="">Opções :</option>
+                    <option value="1">Opção</option>
+                    <option value="2">Opção</option>
+                    <option value="3">Opção</option>
+                  </datalist>
+
+                  <label for="Regionalidade"> Regionalidade</label>
+                  <input
+                    placeholder="Norte"
+                    name="Regionalidade"
+                    id="Regionalidade"
+                    list="Nivel"
+                    type="text"
+                  />
+                  <datalist id="Nivel">
+                    <option value="">Opções :</option>
+                    <option value="1">Opção</option>
+                    <option value="2">Opção</option>
+                    <option value="3">Opção</option>
+                  </datalist>
+
+                  <label for="Entidade-responsável">
+                    Entidade responsável</label
+                  >
+                  <input
+                    placeholder="Nome da entidade"
+                    name="Entidade-responsável"
+                    id="Entidade-responsável"
+                    lang="Nivel"
+                    type="text"
+                  />
+                  <datalist id="Nivel">
+                    <option value="">Opções :</option>
+                    <option value="1">Opção</option>
+                    <option value="2">Opção</option>
+                    <option value="3">Opção</option>
+                  </datalist>
+
+                  <label for="Ano-captação"> Ano para captação</label>
+                  <input
+                    placeholder="Ex: 2026"
+                    name="Ano-captação"
+                    id="Ano-captação"
+                    type="text"
+                  />
+
+                  <label for="Publico-maximo"> Público máximo</label>
+                  <input
+                    placeholder="Ex:5000"
+                    name="Publico-maximo"
+                    id="Publico-maximo"
+                    type="text"
+                  />
+
+                  <label for="Responsavel"> Responsavel</label>
+                  <input
+                    name="Responsavel"
+                    id="Responsavel"
+                    list="Nivel"
+                    type="text"
+                  />
+                  <datalist id="Nivel">
+                    <option value="">Opções :</option>
+                    <option value="1">Opção</option>
+                    <option value="2">Opção</option>
+                    <option value="3">Opção</option>
+                  </datalist>
+                </div>
+              </div>
+
+              <a href="#">
+                <img class="filtro1" src="../assets/filtro1.png" alt=""
+              /></a>
+            </div>
+
+            <div class="Acoes-botoes">
+              <a href="#openModal"><button>Informações do ROI</button></a>
+
+              <div id="openModal" class="modalDialog">
+                <div>
+                  <a href="#close" title="Close" class="close">X</a>
+                  <h2>Popup</h2>
+                  <p>
+                    Isto é uma popup toda bonitinha a funcionar apenas com CSS3.
+                  </p>
+                </div>
+              </div>
+
+              <a href="../Cadastrar-evento/indedx.html"
+                ><button>Cadastrar evento</button></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="div-tabela">
+          <table>
+            <thead>
+              <tr class="titulo-linhas">
+                <th class="titulo-colunas">Nome</th>
+                <th class="titulo-colunas">Etapa</th>
+                <th class="titulo-colunas">Entidade</th>
+                <th class="titulo-colunas">Publico</th>
+                <th class="titulo-colunas">Data do evento</th>
+              </tr>
+            </thead>
+            <tbody>
+              <h3 class="tbody-h3">Mostrando 10 de 51 resultados</h3>
+
+              <tr class="linhas">
+                <td class="coluna-forte">Nome do evento</td>
+                <td class="linha-colorida">
+                  <label class="span-color">Em Captação</label>
+                </td>
+
+                <td class="coluna-fraca"><u>Associação de Médicos do RN</u></td>
+                <td class="coluna-fraca">5000</td>
+                <td class="coluna-fraca">05/11/2020</td>
+              </tr>
+
+              <tr class="linhas">
+                <td class="coluna-forte">
+                  <h4>
+                    <a href="../Nome-evento/index.html">Nome do evento</a>
+                  </h4>
+                </td>
+                <td class="linha-colorida">
+                  <label class="span-color2">Perdido</label>
+                </td>
+                <td class="coluna-fraca"><u>Associação de Médicos do RN</u></td>
+                <td class="coluna-fraca">5000</td>
+                <td class="coluna-fraca">05/11/2020</td>
+              </tr>
+              <tr class="linhas">
+                <td class="coluna-forte">Nome do evento</td>
+                <td class="linha-colorida">
+                  <label class="span-color3">Captado</label>
+                </td>
+                <td class="coluna-fraca"><u>Associação de Médicos do RN</u></td>
+                <td class="coluna-fraca">5000</td>
+                <td class="coluna-fraca">05/11/2020</td>
+              </tr>
+              <tr class="linhas">
+                <td class="coluna-forte">Nome do evento</td>
+                <td class="linha-colorida">
+                  <label class="span-color4">Standby</label>
+                </td>
+                <td class="coluna-fraca"><u>Associação de Médicos do RN</u></td>
+                <td class="coluna-fraca">5000</td>
+                <td class="coluna-fraca">05/11/2020</td>
+              </tr>
+
+              <tr class="linhas">
+                <td class="coluna-forte">Nome do evento</td>
+                <td class="linha-colorida">
+                  <label class="span-color3">Captado</label>
+                </td>
+
+                <td class="coluna-fraca"><u>Associação de Médicos do RN</u></td>
+                <td class="coluna-fraca">5000</td>
+                <td class="coluna-fraca">05/11/2020</td>
+              </tr>
+
+              <tr class="linhas">
+                <td class="coluna-forte">Nome do evento</td>
+                <td class="linha-colorida">
+                  <label class="span-color5">Em Pesquisa</label>
+                </td>
+                <td class="coluna-fraca"><u>Associação de Médicos do RN</u></td>
+                <td class="coluna-fraca">5000</td>
+                <td class="coluna-fraca">05/11/2020</td>
+              </tr>
+
+              <tr class="linhas">
+                <td class="coluna-forte">Nome do evento</td>
+                <td class="linha-colorida">
+                  <label class="span-color3">Captado</label>
+                </td>
+                <td class="coluna-fraca"><u>Associação de Médicos do RN</u></td>
+                <td class="coluna-fraca">5000</td>
+                <td class="coluna-fraca">05/11/2020</td>
+              </tr>
+
+              <tr class="linhas">
+                <td class="coluna-forte">Nome do evento</td>
+                <td class="linha-colorida">
+                  <label class="span-color3">Captado</label>
+                </td>
+                <td class="coluna-fraca"><u>Associação de Médicos do RN</u></td>
+                <td class="coluna-fraca">5000</td>
+                <td class="coluna-fraca">05/11/2020</td>
+              </tr>
+
+              <tr class="linhas">
+                <td class="coluna-forte">Nome do evento</td>
+                <td class="linha-colorida">
+                  <label class="span-color6">Em Prospecção</label>
+                </td>
+
+                <td class="coluna-fraca"><u>Associação de Médicos do RN</u></td>
+                <td class="coluna-fraca">5000</td>
+                <td class="coluna-fraca">05/11/2020</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="last-bar"><img src="../assets/barra.png" alt="" /></div>
+        </div>
+
+        <footer>
+          <hr />
+          <div class="div-footer">
+            <!--Rodapé -->
+            <span class="text-footer"
+              ><b>EJECT CVB</b> © 2022 . Desenvolvido pela <b>EJECT</b></span
+            >
+            <img
+              class="img-footer"
+              src="../../assets/img-footer.png"
+            /><!--Imagem do rodapé -->
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

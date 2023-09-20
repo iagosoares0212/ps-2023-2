@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,800;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,800;1,800;1,900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* Cor de fundo cinza */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+  height: 4.375rem;
+  background: #606060;
+  align-items: center;
+}
+.logo-icon {
+  position: absolute;
+  padding-top: 9px;
+  padding-left: 12px;
+}
+
+.profile-picture {
+  width: 100%;
+  height: 4.375rem;
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+}
+
+.profile-picture-icon {
+  width: 48px;
+  height: 48px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-weight: 700;
+  font-size: 12px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.conteudo-da-pagina {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#left-navbar nav {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+#left-navbar {
+  height: 400%;
+  width: 6.688rem;
+  background: #606060;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+#left-navbar a {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #f2f2f2;
+  flex-direction: column;
+}
+
+#left-navbar a:hover {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+#left-navbar a img {
+  margin-bottom: 10.2px;
+}
+
+.home-icon {
+  padding-top: 7.813rem;
+}
+
+.icon {
+  padding-top: 3.313rem;
+}
+
+.Pag-top {
+  align-items: center;
+  align-content: center;
+  display: flex;
+  padding-right: 40px;
+  padding-left: 40px;
+  height: 10%;
+}
+
+.Acoes {
+  justify-content: space-between;
+  display: flex;
+  height: 50px;
+  margin-top: 60px;
+}
+
+.Acoes-Filtros {
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+h4 {
+  justify-content: start;
+  width: 5rem;
+  height: 2rem;
+  flex-shrink: 0;
+  color: var(--Azul-escuro, #0d132b);
+  font-family: Montserrat;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+h1 {
+  width: 34.625rem;
+  height: 2.4375rem;
+  flex-shrink: 0;
+  color: var(--Azul-escuro, #0d132b);
+  font-family: Montserrat;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.0625rem;
+}
+
+h2 {
+  margin: 40px;
+}
+
+.infos-top {
+  flex-flow: row wrap;
+  display: flex;
+  margin: 40px;
+  width: 100rem;
+  height: 90rem;
+  flex-shrink: 0;
+  border-radius: 0.3125rem;
+
+  background: #fafafa;
+}
+
+.infos-input0 {
+  display: flex;
+  width: 60rem;
+  height: 2.8125rem;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: rgba(13, 19, 43, 0.6);
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.0625rem;
+}
+.infos-input {
+  display: flex;
+  height: 2.8125rem;
+  color: rgba(13, 19, 43, 0.6);
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.0625rem;
+}
+
+.titulo-label {
+  margin: 40px;
+}
+.titulo-label-a {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.infos-tecnicas-top {
+  width: 100%;
+  height: 100px;
+}
+
+.infos-tecnicas {
+  flex-flow: row wrap;
+  display: flex;
+  width: 100rem;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 0.3125rem;
+  background: #fafafa;
+}
+
+.div-p-evento {
+  display: flex;
+  flex-direction: column;
+}
+.div-captacao {
+  display: flex;
+  flex-direction: column;
+  width: 30.625rem;
+  height: 10rem;
+  flex-shrink: 0;
+  border-radius: 0.3125rem;
+  background: #f2f2f2;
+}
+.valor{
+  margin-left: 350px;
+}
+
+.div-p-evento h3 {
+  margin-bottom: 0;
+}
+.div-data-evento {
+  display: flex;
+  height: 2rem;
+}
+.div-data-evento p {
+  margin-right: 5px;
+  margin-left: 20px;
+}
+
+.radio-button{
+display: flex;
+align-items: center;
+ width: 30.625rem;
+height: 7rem;
+flex-shrink: 0;
+border-radius: 0.3125rem;
+background: #F2F2F2;
+}
+.exposicao-label{
+  display: flex;
+ margin-right: 100px;
+}
+
+.Pag-final{
+  margin: 40px;
+  width: 100%;
+  height: 10rem;
+}
+.anexar-doc{
+ display: flex;
+}
+.anexar-button{
+  width: 9.875rem;
+height: 2.9375rem;
+flex-shrink: 0;
+border-radius: 0.3125rem;
+background: #FBC600;
+box-shadow: 0px 4px 4px 0px rgba(32, 32, 32, 0.25);
+}
+
+
+
+/*Estilo do rodapé*/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/*Estilo da Div que abrange o resto dos componentes do rodapé */
+
+.div-footer {
+  display: flex;
+  justify-content: center;
+}
+
+/* Linha que fica acima do nome da EJECT*/
+
+hr {
+  width: 75%;
+}
+
+/* Estilo do texto no rodapé*/
+
+.text-footer {
+  color: var(--Cinza-escuro, #595959);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700px;
+  line-height: normal;
+}
+/* Estilo da img presente no rodapé (triangulo)*/
+.img-footer {
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
+}
