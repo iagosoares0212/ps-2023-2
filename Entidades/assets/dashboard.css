@@ -1,0 +1,23 @@
+@import url("style.css");
+.layout{
+    display: grid;
+    grid-template-areas: 
+    "aside header"
+    "aside main";
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 70px auto; 
+}
+.cabecalho{
+    grid-area: header;
+}
+.menu-lateral{
+    grid-area: aside;
+    background-color: #606060;
+    color: #F2F2F2;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 400;
+}
+.principal{
+    grid-area: main;
+}
