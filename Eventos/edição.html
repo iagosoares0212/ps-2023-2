@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/evento/evento.css">
-    <title>Evento</title>
+    <link rel="stylesheet" href="/Eventos/css/evento/evento.css">
+    <script src="/Eventos/js/edição.js" defer></script>
+    <title>Evento edições</title>
 </head>
 <body>
     <!-- cabeçario -->
@@ -18,140 +19,178 @@
             <!-- barra lateral -->
             <div id="nav-index" >
                 <nav>
-                    <a href="#">a</a>
-                    <a href="#">b</a>
-                    <a href="#">c</a>
-                    <a href="#">d</a>
-                    <a href="#">e</a>
                 </nav>
             </div>
-
-            <!-- container da pagina -->
-            <div id="evento-historicos-container">
-
-                <!-- pagina modal de adição de atividade -->
-                <div id="pop-adiciona"></div>
-
-                <!-- pagina modal de edição de atividade -->
-                <div id="pop-edita"></div>
-
-                <!-- Informações e edições da pagina -->
-                <div class="itens">
-                    <div class="info-container">
-                        <a class="nav-funil" href="#">Funil ></a> 
-                        <a class="nav-funil" href="#">Nome do Evento ></a> 
-                        <strong class="pagina">Edições</strong>
-                    </div>
-
-                    <div>
-                        <div class="info-container2">
-                            <div class="input-pesquisa-con">
-                                <input class="input-pesquisa" id="pesquisa-hitoricos" type="text">
-                                <div class="label-pesquisa">
-                                    <label for="pesquisa-hitoricos">Pesquisar</label>
-                                    <img class="lupa" src="/ico/Group 100.svg" alt="">
+            <div class="conteudo">
+                <!-- container da pagina -->
+                <div id="evento-historicos-container">
+                    <div class="modal">
+                        <!-- pagina modal de adição de atividade -->
+                        <div id="pop-adiciona">
+                            <div class="pop-modal">
+                                <div class="modal-header">
+                                    <h2>Histórico do evento</h2>
+                                    <button>x</button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="modal-ediçao">
+                                        <div >
+                                            <label for="modal-ediçao">Edição</label>
+                                            <div class="input-ediçao">
+                                                <input placeholder="Ex: Natal" id="modal-ediçao" type="text">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <label for="modal-local">Local</label>
+                                            <div class="input-ediçao">
+                                                <input  id="modal-local" type="text">
+                                                <p>Ex: Hotel Ondamar</p>
+                                            </div>
+                                        </div>
+                                    </div>
+     
+                                    <div class="modal-ano">
+                                        <label for="modal-ano">Ano</label>
+                                        <div class="input-ano">
+                                            <input  id="modal-ano" type="text">
+                                            <div>
+                                                <p>Ano</p>
+                                                <a href="#"><img src="/Eventos/ico/action/event_24px.svg" alt="calendario"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button>Salvar</button>
                                 </div>
                             </div>
-                            <button><span>+</span> Adicionar</button>
+                        </div>
+                    
+                        <!-- pagina modal de edição de atividade -->
+                        <div id="pop-edita"></div>
+                    </div>
+                    <!-- Informações e edições da pagina -->
+                    <div class="itens">
+                        <div class="info-container">
+                            <a class="nav-funil" href="#">Funil ></a> 
+                            <a class="nav-funil" href="#">Nome do Evento ></a> 
+                            <strong class="pagina">Edições</strong>
+                        </div>
+
+                        <div>
+                            <div class="info-container2">
+                                <div class="input-pesquisa-con">
+                                    <input class="input-pesquisa" id="pesquisa-hitoricos" type="text">
+                                    <div class="label-pesquisa">
+                                        <label for="pesquisa-hitoricos">Pesquisar</label>
+                                        <img class="lupa" src="/Eventos/ico/Group 100.svg" alt="">
+                                    </div>
+                                </div>
+                                <button><span>+</span> Adicionar</button>
+                            </div>
+                        </div>
+
+
+                        <div class="info-container3">Mostrando 10 de 51 resultados</div>
+                    </div>
+
+                    <!-- container com a tabela -->
+                    <div class="tabela-hitoricos">
+                        <div class="tabela">
+                            <table >
+                                <!-- cabeçario da tabela -->
+                                <thead>
+                                    <tr>
+                                        <th>Edição</th>
+                                        <th>Ano</th>
+                                        <th>Local</th>
+                                        <th class="check-box"></th>
+                                    </tr>
+                                </thead>
+
+                                <!-- corpo da tabela -->
+                                <tbody>
+                                    <tr>
+                                        <td class="">3° Edição</td>
+                                        <td>2020</td>
+                                        <td>Hotel Ondamar</td>
+                                        <td class="check-td"> <a href="#"><img class="img-edit" src="/Eventos/ico/editor/border_color_24px.svg" alt="Edição"></a> <a href="#"><img class="img-exc" src="/Eventos/ico/action/delete_24px.svg" alt="Excluir"></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3° Edição</td>
+                                        <td>2020</td>
+                                        <td>Hotel Ondamar</td>
+                                        <td class="check-td"> <a href="#"><img class="img-edit" src="/Eventos/ico/editor/border_color_24px.svg" alt="Edição"></a> <a href="#"><img class="img-exc" src="/Eventos/ico/action/delete_24px.svg" alt="Excluir"></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3° Edição</td>
+                                        <td>2020</td>
+                                        <td>Hotel Ondamar</td>
+                                        <td class="check-td"> <a href="#"><img class="img-edit" src="/Eventos/ico/editor/border_color_24px.svg" alt="Edição"></a> <a href="#"><img class="img-exc" src="/Eventos/ico/action/delete_24px.svg" alt="Excluir"></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3° Edição</td>
+                                        <td>2020</td>
+                                        <td>Hotel Ondamar</td>
+                                        <td class="check-td"> <a href="#"><img class="img-edit" src="/Eventos/ico/editor/border_color_24px.svg" alt="Edição"></a> <a href="#"><img class="img-exc" src="/Eventos/ico/action/delete_24px.svg" alt="Excluir"></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3° Edição</td>
+                                        <td>2020</td>
+                                        <td>Hotel Ondamar</td>
+                                        <td class="check-td"> <a href="#"><img class="img-edit" src="/Eventos/ico/editor/border_color_24px.svg" alt="Edição"></a> <a href="#"><img class="img-exc" src="/Eventos/ico/action/delete_24px.svg" alt="Excluir"></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3° Edição</td>
+                                        <td>2020</td>
+                                        <td>Hotel Ondamar</td>
+                                        <td class="check-td"> <a href="#"><img class="img-edit" src="/Eventos/ico/editor/border_color_24px.svg" alt="Edição"></a> <a href="#"><img class="img-exc" src="/Eventos/ico/action/delete_24px.svg" alt="Excluir"></a></td>
+                                    <tr>
+                                        <td>3° Edição</td>
+                                        <td>2020</td>
+                                        <td>Hotel Ondamar</td>
+                                        <td class="check-td"> <a href="#"><img class="img-edit" src="/Eventos/ico/editor/border_color_24px.svg" alt="Edição"></a> <a href="#"><img class="img-exc" src="/Eventos/ico/action/delete_24px.svg" alt="Excluir"></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3° Edição</td>
+                                        <td>2020</td>
+                                        <td>Hotel Ondamar</td>
+                                        <td class="check-td"> <a href="#"><img class="img-edit" src="/Eventos/ico/editor/border_color_24px.svg" alt="Edição"></a> <a href="#"><img class="img-exc" src="/Eventos/ico/action/delete_24px.svg" alt="Excluir"></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3° Edição</td>
+                                        <td>2020</td>
+                                        <td>Hotel Ondamar</td>
+                                        <td class="check-td"> <a href="#"><img class="img-edit" src="/Eventos/ico/editor/border_color_24px.svg" alt="Edição"></a> <a href="#"><img class="img-exc" src="/Eventos/ico/action/delete_24px.svg" alt="Excluir"></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3° Edição</td>
+                                        <td>2020</td>
+                                        <td>Hotel Ondamar</td>
+                                        <td class="check-td"> <a href="#"><img class="img-edit" src="/Eventos/ico/editor/border_color_24px.svg" alt="Edição"></a> <a href="#"><img class="img-exc" src="/Eventos/ico/action/delete_24px.svg" alt="Excluir"></a></td>
+                                    </tr>
+                                </tbody>
+
+                                <!-- rodape da tabela -->
+                                <tfoot>
+                                    <tr>
+                                        <th colspan="5" id="avança-foot"><a href="#"><<</a> <a href="#"><</a> <a href="">2</a> <a href=""><span>3</span></a> <a href="">4</a> <a href="">></a> <a href="">>></a></th>
+                                    </tr>
+                                </tfoot>
+                            </table>
                         </div>
                     </div>
 
-
-                    <div class="info-container3">Mostrando 10 de 51 resultados</div>
                 </div>
 
-                <!-- container com a tabela -->
-                <div class="tabela-hitoricos">
-                    <div class="tabela">
-                        <table >
-                            <!-- cabeçario da tabela -->
-                            <thead>
-                                <tr>
-                                    <th>Edição</th>
-                                    <th>Ano</th>
-                                    <th>Local</th>
-                                    <th class="check-box"></th>
-                                </tr>
-                            </thead>
-
-                            <!-- corpo da tabela -->
-                            <tbody>
-                                <tr>
-                                    <td class="">3° Edição</td>
-                                    <td>2020</td>
-                                    <td>Hotel Ondamar</td>
-                                    <td class="check-td"> <a href="#"><img class="img-edit" src="/ico/editor/border_color_24px.svg" alt="Edição"></a> <a href="#"><img class="img-exc" src="/ico/action/delete_24px.svg" alt="Excluir"></a></td>
-                                </tr>
-                                <tr>
-                                    <td>3° Edição</td>
-                                    <td>2020</td>
-                                    <td>Hotel Ondamar</td>
-                                    <td class="check-td"> <a href="#"><img class="img-edit" src="/ico/editor/border_color_24px.svg" alt="Edição"></a> <a href="#"><img class="img-exc" src="/ico/action/delete_24px.svg" alt="Excluir"></a></td>
-                                </tr>
-                                <tr>
-                                    <td>3° Edição</td>
-                                    <td>2020</td>
-                                    <td>Hotel Ondamar</td>
-                                    <td class="check-td"> <a href="#"><img class="img-edit" src="/ico/editor/border_color_24px.svg" alt="Edição"></a> <a href="#"><img class="img-exc" src="/ico/action/delete_24px.svg" alt="Excluir"></a></td>
-                                </tr>
-                                <tr>
-                                    <td>3° Edição</td>
-                                    <td>2020</td>
-                                    <td>Hotel Ondamar</td>
-                                    <td class="check-td"> <a href="#"><img class="img-edit" src="/ico/editor/border_color_24px.svg" alt="Edição"></a> <a href="#"><img class="img-exc" src="/ico/action/delete_24px.svg" alt="Excluir"></a></td>
-                                </tr>
-                                <tr>
-                                    <td>3° Edição</td>
-                                    <td>2020</td>
-                                    <td>Hotel Ondamar</td>
-                                    <td class="check-td"> <a href="#"><img class="img-edit" src="/ico/editor/border_color_24px.svg" alt="Edição"></a> <a href="#"><img class="img-exc" src="/ico/action/delete_24px.svg" alt="Excluir"></a></td>
-                                </tr>
-                                <tr>
-                                    <td>3° Edição</td>
-                                    <td>2020</td>
-                                    <td>Hotel Ondamar</td>
-                                    <td class="check-td"> <a href="#"><img class="img-edit" src="/ico/editor/border_color_24px.svg" alt="Edição"></a> <a href="#"><img class="img-exc" src="/ico/action/delete_24px.svg" alt="Excluir"></a></td>
-                                <tr>
-                                    <td>3° Edição</td>
-                                    <td>2020</td>
-                                    <td>Hotel Ondamar</td>
-                                    <td class="check-td"> <a href="#"><img class="img-edit" src="/ico/editor/border_color_24px.svg" alt="Edição"></a> <a href="#"><img class="img-exc" src="/ico/action/delete_24px.svg" alt="Excluir"></a></td>
-                                </tr>
-                                <tr>
-                                    <td>3° Edição</td>
-                                    <td>2020</td>
-                                    <td>Hotel Ondamar</td>
-                                    <td class="check-td"> <a href="#"><img class="img-edit" src="/ico/editor/border_color_24px.svg" alt="Edição"></a> <a href="#"><img class="img-exc" src="/ico/action/delete_24px.svg" alt="Excluir"></a></td>
-                                </tr>
-                                <tr>
-                                    <td>3° Edição</td>
-                                    <td>2020</td>
-                                    <td>Hotel Ondamar</td>
-                                    <td class="check-td"> <a href="#"><img class="img-edit" src="/ico/editor/border_color_24px.svg" alt="Edição"></a> <a href="#"><img class="img-exc" src="/ico/action/delete_24px.svg" alt="Excluir"></a></td>
-                                </tr>
-                                <tr>
-                                    <td>3° Edição</td>
-                                    <td>2020</td>
-                                    <td>Hotel Ondamar</td>
-                                    <td class="check-td"> <a href="#"><img class="img-edit" src="/ico/editor/border_color_24px.svg" alt="Edição"></a> <a href="#"><img class="img-exc" src="/ico/action/delete_24px.svg" alt="Excluir"></a></td>
-                                </tr>
-                            </tbody>
-
-                            <!-- rodape da tabela -->
-                            <tfoot>
-                                <tr>
-                                    <th colspan="5" id="avança-foot"> <a href="#"><<</a> <a href="#"><</a> <a href="">1</a> <a href="">2</a> <a href="">3</a> <a href="">></a> <a href="">>></a></th>
-                                </tr>
-                            </tfoot>
-                        </table>
+                <footer class="footer">
+                    <div class="rodape-container">
+                        <div class="rodape">
+                            <p>EJECT CVB  <span> © 2022 . Desenvolvido pela </span> EJECT <img src="/Eventos/ico/Group 5.svg" alt="logo"></p>
+                        </div>
                     </div>
-                </div>
+                </footer>
             </div>
         </div>
         
     </section>
-
-    <!-- rodape -->
-    <footer></footer>
 </body>
 </html>
