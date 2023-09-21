@@ -1,0 +1,35 @@
+.formulario{
+    width: 40rem;
+    margin-top: 8rem;
+}
+.formulario-titulo{
+    font-family: var(--fonte-principal);
+    font-size: 48px;
+    font-weight: 800;
+}
+.formulario-texto-secundario{
+    font-size: 18px;
+    font-weight: 500;
+}
+.formulario-texto-terciario{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.formulario-sub-titulo{
+    font-weight: 700;
+    font-size: 16px;
+}
+.formulario-texto{
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--azul-escuro);
+}
+.fomulario-check-box{
+    font-size: 14px;
+    font-weight: 400;
+}
+.formulario-botao{
+    font-size: 16px;
+    font-weight: 500;
+}

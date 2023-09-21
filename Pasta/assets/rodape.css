@@ -1,0 +1,15 @@
+.rodape-container{
+    width: auto;
+}
+.rodape-divisoria{
+    width: 55rem;
+    color: var(--cinza-escuro-rodape);
+}
+.rodape-texto{
+    color: var(--cinza-escuro-rodape);
+    font-weight: 400;
+    font-size: 14px;
+}
+.rodape-texto-bold{
+    font-weight: 700;
+}

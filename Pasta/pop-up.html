@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/reset.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Lato&family=Montserrat:wght@300;400;500;700;800&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <title>Tela de Login</title>
+</head>
+<div class="card m-3" style="width: 42rem;height: 30rem;">
+    <div class="card-body popup-content">
+        <form class="">
+            <div class="m-2 d-flex">
+                <h3 class="titulo-lista col">Nome</h3>
+                <h3 class="titulo-lista col">Responsável</h3>
+            </div>
+            <div class="d-flex">
+                <input type="name" class="form-control mb-4 border-0" id="exampleInputEmail1"
+                    aria-describedby="emailHelp" placeholder="Ex: Ligar para a entidade responsável">
+                <input type="name" class="form-control mb-4 border-0" id="exampleInputPassword1" placeholder="Kalliny">
+            </div>
+
+            <div class="m-2 d-flex">
+                <h3 class="titulo-lista col">Data</h3>
+                <h3 class="titulo-lista col">Hora</h3>
+            </div>
+            <div class="d-flex">
+                <input type="date" class="form-control border-0 mb-4" id="exampleInputEmail1"
+                    aria-describedby="emailHelp">
+                <input type="time" class="form-control border-0 mb-4" id="exampleInputPassword1" placeholder="nomes">
+            </div>
+            <div class="m-2 d-flex">
+                <h3 class="titulo-lista col">Tipo de atividade</h3>
+                <h3 class="titulo-lista col">Estado de atividade</h3>
+            </div>
+            <div class="d-flex">
+                <input type="name" class="form-control mb-4 border-0 selecione" id="exampleInputEmail1"
+                    aria-describedby="emailHelp" placeholder="Selecione">
+                <input type="name" class="form-control mb-4 border-0 selecione mx-3" id="exampleInputPassword1" placeholder="Selecione">
+            </div>
+            <div class="m-2">
+                <h3 class="titulo-lista col">Observação</h3>
+                <input type="name" class="form-control mb-4 border-0 pb-5 mt-2" id="exampleInputEmail1"
+                aria-describedby="emailHelp" placeholder="Ex: Não foi possível contatar a atividade">
+            </div>
+            <div class="d-flex">
+                    <div>
+                        <button class="botao btn laranja rounded-1 fonte-principal px-4 py-2 mx-auto" type="submit">+ Adicionar</button>
+                    </div>
+                    
+                    <div class="d-flex align-items-center mx-3">
+                        <input type="checkbox" name="opcao" value="valor" />
+                        <h3 class="titulo-lista m-2">Atividade Concluida</h3>
+                    </div>
+                    <div class="ms-auto">
+                        <button class="botao-excluir btn laranja rounded-1 fonte-principal px-4 py-2 mx-auto" type="submit">Excluir Atividade</button>
+                    </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+</html>

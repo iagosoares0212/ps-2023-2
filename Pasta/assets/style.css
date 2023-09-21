@@ -1,0 +1,74 @@
+@import url("formulario.css");
+@import url("rodape.css");
+@import url("dashboard.css");
+
+:root{
+    --laranja: #FBC600;;
+    --fonte-principal:"Montserrat";
+    --azul-escuro: #0D132B ;
+    --cinza-claro: #606060;
+    --cor-de-fundo: #F2F2F2;
+    --cinza-claro-rodape:#A6A6A6;
+    --cinza-escuro-rodape: #595959;
+    --laranja-escuro: #ffa500;
+    --verde-agua: #5B827E;
+}
+
+body{
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-de-fundo);
+    color: var(--azul-escuro);
+}
+.barra-nav{
+    background-color: var(--cinza-claro);
+}
+.botao{
+    background-color: var(--laranja);
+    font-weight: 500;
+    font-size: 14px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.botao:hover{
+    background-color: var(--laranja-escuro);
+}
+.btn-secondary{
+    background-color: var(--cinza-escuro-rodape);
+}
+.titulo-usuários{
+    font-size: 30px;
+    font-weight: 800;
+}
+.titulo-card{
+    font-size: 24px;
+    font-weight: 700;
+}
+.subtitulo-card{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--verde-agua);
+    text-transform: uppercase;
+}
+.coluna-esqr{
+    display: grid;
+    grid-template-areas:
+        "icone nome"
+        "icone cargo"
+    ;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    
+}
+
+
+.icone{
+    grid-area: icone;
+}
+.nome{
+    grid-area: nome;
+}
+.cargo{
+    grid-area: cargo;
+}
+.bg{
+    background-color: var(--cor-de-fundo);
+}
