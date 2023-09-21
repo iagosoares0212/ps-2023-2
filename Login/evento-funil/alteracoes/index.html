@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Alterações</title>
+  </head>
+  <body>
+    <header>
+      <!-- cabeçário da página-->
+
+      <div class="logo">
+        <a class="logo-icon" href="../Cadastrar-evento/indedx.html"
+          ><img src="../assets/ejecticon.png" alt=""
+        /></a>
+      </div>
+
+      <div class="profile-picture">
+        <a class="profile-picture-icon" href="#">FOTO</a>
+      </div>
+    </header>
+
+    <div class="container">
+      <!-- barra lateral -->
+      <div id="left-navbar">
+        <nav>
+          <a class="home-icon" href="#"
+            ><img src="../assets/homeicon.svg" alt="" />
+            <span class="navbar-text">Início</span>
+          </a>
+          <a class="icon" href="#"
+            ><img src="../assets/funnelicon.svg" alt="" />
+            <span class="navbar-text">Funil</span>
+          </a>
+          <a class="icon" href="#"
+            ><img src="../assets/entityicon.png" alt="" />
+            <span class="navbar-text">Entidades</span>
+          </a>
+          <a class="icon" href="#"
+            ><img src="../assets/filtrosvg.svg" alt="" />
+            <span class="navbar-text">Filtros</span>
+          </a>
+          <a class="icon" href="#"
+            ><img src="../assets/usuario.svg" alt="" />
+            <span class="navbar-text">Usuários</span>
+          </a>
+        </nav>
+      </div>
+
+      <div class="conteudo-da-pagina">
+        <div class="Pag-top">
+            <div class="titulo-alt">
+                <h3 class="titulo-h3"> <b>Funil > Nome do Evento ></b> </h3>
+                <h1 class="titulo-h1"> Alterações</h1>
+            </div>
+         
+          <div class="Acoes">
+            <div class="Acoes-Filtros">
+              <div class="div-pesquisa">
+                <input type="text" placeholder="Pesquisar" />
+                <img src="../assets/procurar.png" />
+              </div>
+
+              <a href="#openModal"
+                ><img class="funil" src="../assets/filtro.png" alt=""
+              /></a>
+
+              <div id="openModal" class="modalDialog">
+                <div class="allinputs">
+                  <a href="#close" title="Close" class="close">X</a>
+                  <h2>Filtros <button class="popupbutton">Aplicar</button></h2>
+                  <label for="Ano-busca"> Ano de busca</label>
+                  <input
+                    placeholder="Ex:2020"
+                    name="Ano-busca"
+                    id="Ano-busca"
+                    type="text"
+                  />
+
+                  <label for="Nivel-funil"> Nível do funil</label>
+                  <input
+                    placeholder="Nivel do funil"
+                    name="Nivel-funil"
+                    id="Nivel-funil"
+                    list="Nivel"
+                    type="text"
+                  />
+                  <datalist id="Nivel">
+                    <option value="">Opções :</option>
+                    <option value="1">Opção</option>
+                    <option value="2">Opção</option>
+                    <option value="3">Opção</option>
+                  </datalist>
+
+                  <label for="Area-atuação"> Área de atuação</label>
+                  <input
+                    placeholder="Médica"
+                    name="Area-atuação"
+                    id="Area-atuação"
+                    list="Nivel"
+                    type="text"
+                  />
+                  <datalist id="Nivel">
+                    <option value="">Opções :</option>
+                    <option value="1">Opção</option>
+                    <option value="2">Opção</option>
+                    <option value="3">Opção</option>
+                  </datalist>
+
+                  <label for="Regionalidade"> Regionalidade</label>
+                  <input
+                    placeholder="Norte"
+                    name="Regionalidade"
+                    id="Regionalidade"
+                    list="Nivel"
+                    type="text"
+                  />
+                  <datalist id="Nivel">
+                    <option value="">Opções :</option>
+                    <option value="1">Opção</option>
+                    <option value="2">Opção</option>
+                    <option value="3">Opção</option>
+                  </datalist>
+
+                  <label for="Entidade-responsável">
+                    Entidade responsável</label
+                  >
+                  <input
+                    placeholder="Nome da entidade"
+                    name="Entidade-responsável"
+                    id="Entidade-responsável"
+                    lang="Nivel"
+                    type="text"
+                  />
+                  <datalist id="Nivel">
+                    <option value="">Opções :</option>
+                    <option value="1">Opção</option>
+                    <option value="2">Opção</option>
+                    <option value="3">Opção</option>
+                  </datalist>
+
+                  <label for="Ano-captação"> Ano para captação</label>
+                  <input
+                    placeholder="Ex: 2026"
+                    name="Ano-captação"
+                    id="Ano-captação"
+                    type="text"
+                  />
+
+                  <label for="Publico-maximo"> Público máximo</label>
+                  <input
+                    placeholder="Ex:5000"
+                    name="Publico-maximo"
+                    id="Publico-maximo"
+                    type="text"
+                  />
+
+                  <label for="Responsavel"> Responsavel</label>
+                  <input
+                    name="Responsavel"
+                    id="Responsavel"
+                    list="Nivel"
+                    type="text"
+                  />
+                  <datalist id="Nivel">
+                    <option value="">Opções :</option>
+                    <option value="1">Opção</option>
+                    <option value="2">Opção</option>
+                    <option value="3">Opção</option>
+                  </datalist>
+                </div>
+              </div>
+
+              
+            </div>
+
+          </div>
+        </div>
+        <div class="div-tabela">
+          <table>
+            <thead>
+              <tr class="titulo-linhas">
+                <th class="titulo-colunas">Nome</th>
+                <th class="titulo-colunas">Data</th>
+                <th class="titulo-colunas">Hora</th>
+                <th class="titulo-colunas">Responsavel</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <h3 class="tbody-h3">Mostrando 10 de 51 resultados</h3>
+
+              <tr class="linhas">
+                <td class="coluna-forte">Cadastro do evento <p>ENEJ</p>  </td>
+                <td class="linha-colorida">
+                    20/09/2020
+                </td>
+
+                <td class="coluna-fraca"><u>10h 10 min</u></td>
+                <td class="coluna-fraca">Luana Gomes</td>
+               
+              </tr>
+
+              <tr class="linhas">
+                <td class="coluna-forte">Cadastro do evento <p>ENEJ</p></td>
+                <td class="linha-colorida">
+                    20/09/2020
+                </td>
+                <td class="coluna-fraca"><u>15h 56 min</u></td>
+                <td class="coluna-fraca">Kalliny Gomes</td>
+               
+              </tr>
+              <tr class="linhas">
+                <td class="coluna-forte">Cadastro do evento <p>ENEJ</p></td>
+                <td class="linha-colorida">
+                 20/09/2020
+                </td>
+                <td class="coluna-fraca"><u>14h 02 min</u></td>
+                <td class="coluna-fraca">Kalliny Gomes</td>
+               
+              </tr>
+              <tr class="linhas">
+                <td class="coluna-forte">Cadastro do evento <p>ENEJ</p></td>
+                <td class="linha-colorida">
+                    20/09/2020
+                </td>
+                <td class="coluna-fraca"><u>10h 10 min</u></td>
+                <td class="coluna-fraca">Luana Gomes</td>
+               
+              </tr>
+
+              <tr class="linhas">
+                <td class="coluna-forte">Cadastro do evento <p>ENEJ</p></td>
+                <td class="linha-colorida">
+                 20/09/2020
+                </td>
+
+                <td class="coluna-fraca"><u>10h 10 min</u></td>
+                <td class="coluna-fraca">Luana Gomes</td>
+               
+              </tr>
+
+              <tr class="linhas">
+                <td class="coluna-forte">Cadastro do evento <p>ENEJ</p></td>
+                <td class="linha-colorida">
+                    20/09/2020
+                </td>
+                <td class="coluna-fraca"><u>10h 10 min</u></td>
+                <td class="coluna-fraca">Luana Gomes</td>
+               
+              </tr>
+
+              <tr class="linhas">
+                <td class="coluna-forte">Cadastro do evento <p>ENEJ</p></td>
+                <td class="linha-colorida">
+                 20/09/2020
+                </td>
+                <td class="coluna-fraca"><u>10h 10 min</u></td>
+                <td class="coluna-fraca">Luana Gomes</td>
+               
+              </tr>
+
+              <tr class="linhas">
+                <td class="coluna-forte">Cadastro do evento <p>ENEJ</p></td>
+                <td class="linha-colorida">
+                    20/09/2020
+                </td>
+                <td class="coluna-fraca"><u>10h 10 min</u></td>
+                <td class="coluna-fraca">Luana Gomes</td>
+               
+              </tr>
+
+              <tr class="linhas">
+                <td class="coluna-forte">Cadastro do evento <p>ENEJ</p></td>
+                <td class="linha-colorida">
+                    20/09/2020
+                </td>
+
+                <td class="coluna-fraca"><u>10h 10 min</u></td>
+                <td class="coluna-fraca">Luana Gomes</td>
+               
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="last-bar"><img src="../assets/barra.png" alt="" /></div>
+        </div>
+
+        <footer>
+          <hr />
+          <div class="div-footer">
+            <!--Rodapé -->
+            <span class="text-footer"
+              ><b>EJECT CVB</b> © 2022 . Desenvolvido pela <b>EJECT</b></span
+            >
+            <img
+              class="img-footer"
+              src="../../assets/img-footer.png"
+            /><!--Imagem do rodapé -->
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

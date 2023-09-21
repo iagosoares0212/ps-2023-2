@@ -1,0 +1,176 @@
+/*Importação de estilos com base no modelo solicitado*/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&family=Mulish:wght@200;300&display=swap");/*Font MULISH*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap');/*Font Montserrat 800*/
+
+/*Estilização do componente body*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Cor de fundo cinza */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  /*Estilo da barra de navegação na parte superior da tela  */
+
+  .navbar { 
+    height: 4.6875rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #606060;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 10px 20px;
+    color: white; 
+  }
+  
+  /* Logo da EJECT presente na barra de navegação */
+  
+  .navbar-left img {
+    width: 5rem;
+    height: 5rem;
+    flex-shrink: 0;
+  }
+  
+  /*Estilo do botao de login da barra de navegação */
+  
+  .login-button1 {
+    width: 5.4375rem;
+    height: 1.68338rem;
+    flex-shrink: 0;
+    border-radius: 0.1875rem;
+    background: #fbc600;
+  }
+
+  /*Estilo da principal DIV do conteudo da pagina */
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /*Estilo da caixa que contem os textos  */
+  
+  .div-box {
+    flex-shrink: 0;
+    width:  30%;
+    height: 50%;
+    display: grid;
+    justify-content: center;
+    align-content: space-evenly ;
+  }
+  
+  /* Estilização do texto "Esqueci minha senha" */
+  
+  h1 {
+    margin-bottom: 0px;
+    display: flex;
+    width: auto;
+    height: 3.375rem;
+    flex-direction:column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #0D132B;
+    font-family: Montserrat 800;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+/* Estilização do texto " O e-mail foi enviado com sucesso! Agora você deve acessar sua caixa de entrada e clicar no link que foi enviado."*/
+
+  h3 {
+    flex-direction:column;
+    margin-top: 0px;
+    width: 35rem;
+    color: #0D132B;
+    font-family: Montserrat 800;
+    font-size: 1.23rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.875rem; /* 166.667% */
+  }
+  
+  /*Estilização das divs de conteudo do formulario */
+  
+  .form-group {
+    margin-top: 10px;
+    text-align: left;
+  }
+  
+
+  /* Estilo do botão "REDEFINIR SENHA" */
+
+.login-button {
+    margin-top: 50px;
+    font-weight:bold ;
+    font-size:large;
+     font-family: Montserrat;
+      width: 101%;
+      height: 2.5rem;
+      flex-shrink: 0;
+      border-radius: 0.1875rem;
+      background: #fbc600;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+    
+    /* Quando passar o mouse por cima do botão do LOGIN */
+    
+    .login-button:hover {
+      background-color: #ff0; /* Cor de fundo amarelo mais claro */
+    }
+  
+    /*Estilo do rodapé*/
+
+footer {
+    display: flex;
+  
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  
+  /*Estilo da Div que abrange o resto dos componentes do rodapé */
+  
+  .div-footer {
+      display: flex;
+      justify-content: center;
+    }
+    
+  /* Linha que fica acima do nome da EJECT*/
+  
+  hr {
+    width: 75%;
+    
+  }
+  
+  /* Estilo do texto no rodapé*/
+  
+  .text-footer {
+    color: var(--Cinza-escuro, #595959);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700px;
+    line-height: normal;
+  }
+  /* Estilo da img presente no rodapé (triangulo)*/
+  .img-footer {
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+  }
+  
+  a{
+    color: #595959;
+    text-decoration: none;
+  }
